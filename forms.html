@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>forms button</title>
+	<style type="text/css">
+		legend{
+			text-transform: capitalize;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		 <fieldset style="border: solid tomato;border-top-left-radius: 20px;border-bottom-right-radius: 20px">
+		 This is a text box <br> <legend style="color: purple;">text</legend>
+		<input type="text" name="text" placeholder="text here" style="border:1.5px solid red;"><br></fieldset>
+		<fieldset><legend>checkbox</legend>
+		This is a checkbox <br>
+		<input type="checkbox" name="checkbox">First check box
+		<input type="checkbox" name="checkbox">Second check box 
+		<input type="checkbox" name="checkbox">third check box <br>
+		</fieldset>
+		<fieldset><legend>radio</legend>
+		This is a radio button <br>
+		<input type="radio" name="radio">First radio button
+		<input type="radio" name="radio">Second radio button
+		<input type="radio" name="radio">third radio button<br></fieldset>
+		<fieldset><legend>dropdown menu</legend>
+		This is a drop down menu <br>
+		<select name="dropdown" >
+			<option>none</option>
+			<option>first option</option>
+			<option>second option</option>
+			<option>third option</option>
+		</select><br></fieldset>
+		<fieldset><legend>upload</legend>
+		This is a upload button <br>
+		<input type="file" name="upload">upload your files <br></fieldset>
+		<fieldset><legend>submit</legend>
+		This is a submit button <br>
+		<input type="submit" name="submit" value="submit"> <br></fieldset>
+		<fieldset><legend>submit using img</legend>
+		This is a submit button using img <br>
+		<input type="image" name="image" src="/home/dj21_vicky21_/Downloads/person.jpg" width="100px" height="20px" style="border-radius: 6px;"> <br></fieldset>
+		<fieldset><legend>text area</legend>
+		This is a text area <br>
+		<textarea>Enter your text 
+		</textarea><br></fieldset>
+		<fieldset><legend>password</legend>
+		This is a password <br>
+		<input type="password" name="password" maxlength="6" required="required" placeholder="enter your password"> <br></fieldset>
+		<fieldset><legend>hidden</legend>
+		This is a hidden button <br>
+		<input type="hidden" name="hidden">nothing <br></fieldset>
+		<fieldset><legend>img button</legend>
+		<button><img src="/home/dj21_vicky21_/Downloads/person.jpg" width="100px" height="20px" alt="add">add</button> <br></fieldset>
+		<fieldset><legend>Date</legend>
+		This is a date button <br>
+		<input type="date" name="date"> <br></fieldset>
+		<fieldset><legend>Email</legend>
+		This is a email button <br>
+		<input type="email" name="email" placeholder="enter your email"> <br></fieldset>
+		<fieldset><legend>URL</legend>
+		This is a url button <br>
+		<input type="url" name="url" placeholder="enter or paste your url"> <br></fieldset>
+		<fieldset><legend>Search</legend>
+		This is a search button <br>
+		<input type="search" name="search"> <br></fieldset>
+
+	</form>
+</body>
+</html>
