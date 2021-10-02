@@ -1,0 +1,12 @@
+h1{
+	margin-left:100px;border-bottom:tomato double 3px;width: 310px
+}
+
+div{
+	color: navy;border:3px solid lightblue; border-top-left-radius:10px;border-bottom-right-radius: 10px;width: 140px;border-top-width: 5px;border-bottom-width: 5px;
+	
+}
+
+p{
+	border-left:#FFC300 solid 4px;
+}
