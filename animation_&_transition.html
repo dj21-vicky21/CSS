@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		animation and transition
+	</title>
+	<style type="text/css">
+		body{margin: 0px;
+			padding: 0px;
+			align-items: center;
+			justify-content: center;
+			display: flex;
+			animation-name: bodyani;
+			animation-duration: 4s;
+			animation-fill-mode: forwards;
+
+		}
+		@keyframes bodyani{
+			0%{background: whitesmoke;
+
+			}
+			100%{
+				background: black;
+			}
+		}
+		.par{
+			text-align: center;
+			position: relative;
+			top: 30px;
+			animation-name: parani;
+			animation-duration: 4s;
+			box-sizing: border-box;
+			border: 2px solid navy;
+			border-radius: 5px;
+			width: 120px;
+			text-transform: uppercase;
+			transition-property: all;
+			transition-duration: 1s;
+			font-weight: bold;
+			cursor: pointer;
+			animation-timing-function: linear;
+			background: yellow;
+			padding: 4px 4px 4px 4px ;
+			animation-fill-mode: forwards;
+
+
+		}
+		.par:hover{
+			transform: rotateY(360deg);
+			background: grey;
+		}
+		
+		@keyframes  parani{
+			0%{top: -30px;border-radius: 0 0 0 0; border: red dashed;background: whitesmoke;
+			}
+			25%{top: 30px;border-radius: 0 50% 0 50%;border: red dashed;
+				
+			}
+			50%{background: red;color: whitesmoke;border-radius: 0 25% 0 25%
+				
+			}
+			75%{background: orange;color: whitesmoke;
+				
+			}
+		
+			100%{background: yellow;color: black;border-radius:50%;
+			}
+
+		}
+		.par2{
+			position: relative;
+		}
+		p{
+			position: absolute;
+			top: 50px;
+			color: whitesmoke;
+			animation-name: pani;
+			animation-duration: 3s;
+			animation-timing-function: linear;
+			text-transform: uppercase;
+			border: 2px hotpink solid;
+			padding: 5px 100px 5px 100px;
+			cursor: pointer;
+			background: peachpuff;
+			color: black;
+			animation-fill-mode: forwards;
+			opacity: 0;
+			animation-delay: 1s;
+
+		}
+		@keyframes pani{
+			100%{
+				opacity: 1;
+				border-radius: 10px;border-top-left-radius: 300px;
+				border-bottom-right-radius: 200px;
+
+			}
+			}
+
+
+	</style>
+</head>
+<body>
+	<div class="par">
+		welcome
+	</div>
+	
+	<p> using animation and transition </p>
+	
+
+
+</body>
+</html>
