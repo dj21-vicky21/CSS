@@ -44,9 +44,6 @@
 
 
 		}
-		.body .menu ul li{
-			cursor: pointer;
-		}
 		#one{
 			display: none;
 			cursor: pointer;
@@ -63,6 +60,10 @@
 			display: none;
 			cursor: pointer;
 		}
+		.body .menu ul li{
+			cursor: pointer;
+		}
+		
 		.body .content #me1{
 			display: none;
 		}
@@ -75,27 +76,81 @@
 		.body .content #me4{
 			display: none;
 		}
+
+
+		/*first is blocked other none*/
 		#one:checked~.content #me1{
 			display: block;
 		}
+		#one:checked~.content #me2{
+			display: none;
+		}
+		#one:checked~.content #me3{
+			display: none;
+		}
+		#one:checked~.content #me4{
+			display: none;
+		}
+
+
+
+
+		/*second is blocked other  none*/
 		#two:checked~.content #me2{
 			display: block;
 		}
+		#two:checked~.content #me1{
+			display: none;
+		}
+		#two:checked~.content #me3{
+			display: none;
+		}
+		#two:checked~.content #me4{
+			display: none;
+		}
+
+
+
+
+		/*third is blocked other  none*/
 		#three:checked~.content #me3{
 			display: block;
 		}
+		#three:checked~.content #me1{
+			display: none;
+		}
+		#three:checked~.content #me2{
+			display: none;
+		}
+		#three:checked~.content #me4{
+			display: none;
+		}
+
+
+
+
+
+		/*fourth is blocked other  none*/
 		#four:checked~.content #me4{
 			display: block;
 		}
-
+		#four:checked~.content #me1{
+			display: none;
+		}
+		#four:checked~.content #me2{
+			display: none;
+		}
+		#four:checked~.content #me3{
+			display: none;
+		}
 	</style>
 </head>
 <body>
 	<div class="body">
-		<input type="checkbox" id="one">
-		<input type="checkbox" id="two">
-		<input type="checkbox" id="three">
-		<input type="checkbox" id="four">
+		<input type="radio" id="one" name="radio1">
+		<input type="radio" id="two" name="radio1">
+		<input type="radio" id="three" name="radio1">
+		<input type="radio" id="four" name="radio1">
 		<div class="menu">
 			<ul>
 				<label for="one" class="m1"><li id="menu1" style="color: red;">hit me1!</li></label>
