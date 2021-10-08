@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Profile</title>
+	<link rel="icon" type="text/css" href="/home/dj21_vicky21_/Pictures/pic.png">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,600;1,100;1,200&display=swap');
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+			
+			
+		}
+		body,html{
+			height: 100vh;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+
+		}
+		body{
+			background-color:  #cce2f9 ;
+		}
+		.con{
+			width: 100%;
+			height: 100%;
+			background-color: #cce2f9;
+			transition: 0.5s all;
+			
+			
+		}
+		.container{
+			position: relative;
+			top: 100px;
+			left: 40%;
+			width: 300px;
+			height: 450px;
+			background-color:   #98badd  ;
+			border-radius: 10px;
+			box-shadow:inset 0 0 8px     #66b8f9  ,
+			            0 0 2px     #66b8f9  ,
+			            0 0 5px     #66b8f9  ,
+			            0 0 10px     #66b8f9  ;
+			            transition: 0.5s all;
+			
+		}
+		.container .im{
+			border-radius: 50%;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			top: 12%;
+			background-repeat: no-repeat;
+			
+		}
+		.container .im img{
+			border-radius: 50%;
+			box-shadow:inset 0 0 10px  #5faaf4 ,
+			            0 0 20px    #5faaf4 ,
+			            0 0 200px    #5faaf4  ,
+			            0 0 20px     #5faaf4 ;
+			            
+		}
+		.container .name{
+			display: flex;
+			justify-content: center;
+			top: 15%;
+			position: relative;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 19.5px;
+			letter-spacing: 3px;
+			font-family:'Poppins', sans-serif; 
+			
+			
+			            
+
+		}
+		.container .btns ul{
+			list-style: none;
+			display: flex;
+			position: relative;
+			justify-content: center;
+			top: 100px;
+			
+
+
+		}
+		.container .btns ul li{
+			padding: 20px 10px;
+			font-size: 33px;
+			
+
+		}
+		
+		.container .btns ul li a{
+			color: black;
+			border-radius: 5px;
+			padding: 5px;
+			display: flex;
+			text-decoration: none;
+			transition: 0.5s all;
+			
+		}
+		.container .btns ul li a:hover{
+			background-color:  #cce2f9 ;
+			color: black;
+			transform: translateY(-5px);
+			text-shadow: 0 25px 30px  black;
+			transition: 0.6s all;
+		}
+		.con .container .mode{
+			display: flex;
+			justify-content: flex-end;
+			padding: 10px;
+			font-size: 23px;
+		}
+		.con .container .mode .bx{
+			background-color: #6666;
+			border-radius: 50%;
+			color: #222;
+			padding: 4px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: -1;
+
+		}
+		.con .container .mode .bx:hover{
+			transform:scale(1.1);
+			background-color:   #6f7274  ;
+		}
+		input{
+			display: none;
+		}
+		#dark:checked ~ .con{
+			background-color:  #333 ;
+		}
+		#dark:checked ~ .con .container{
+			background-color:   #222  ;
+			box-shadow:inset 0 0 8px #7777   ,
+			            0 0 2px   #7777 ,
+			            0 0 5px   #7777 ,
+			            0 0 10px   #7777 ;
+
+		}
+		#dark:checked ~ .con .container .mode .bx{
+			background-color: #556;
+			color: black
+		}
+		#dark:checked ~ .con .container .btns ul li a{
+			color: white;
+
+		}
+		#dark:checked ~ .con .container .name{
+			color: whitesmoke;
+		}
+		#dark:checked ~ .con .container .im img{
+			box-shadow:inset 0 0 8px #7777   ,
+			            0 0 2px   #7777 ,
+			            0 0 5px   #7777 ,
+			            0 0 10px   #7777 ;
+
+		}
+		#dark:checked ~ .con .container .btns ul li a:hover{
+			background-color: #333;
+			text-shadow: 0 10px 30px  white;
+		}
+		#dark:checked ~ .con .container .btns ul li a{
+			background: #3339;
+
+		}
+		.con .container .mode abbr{
+			text-decoration: none;
+		}
+		.con .container .mode #darsun{
+			position: relative;
+		}
+
+		#dark:checked ~ .con .container .mode #darsun{
+			display: block;transition: 0.9s all;
+		}
+		#dark:checked ~ .con .container .mode #darmoon{
+			display: none;transition: 0.9s all;
+		}
+		.con .container .mode #darsun{
+			display: none;transition: 0.9s all;
+		}
+		.con .container .mode #darsun #sun{
+			color: white;
+		}
+
+		
+	</style>
+</head>
+<body><input type="checkbox" name="che" id="dark">
+	<div class="con">
+		<div class="container">
+			<div class="mode">
+				<label for="dark" class="moon" id="darmoon"><abbr title="dark_mode"><i class='bx bx-moon' ></i></abbr></label><label for="dark" id="darsun"><i class='bx bx-sun' id="sun"></i></label>
+			</div>
+	<div class="im">
+		<img src="/home/dj21_vicky21_/Pictures/pic.png" width="150px" height="150px">
+	</div>
+	<div class="name">
+		<p>Dhananjezhian.j</p>
+	</div>
+	<div class="btns">
+		<ul>
+			<li><a href="https://www.facebook.com/dhananjezhian.dhananjezhian.3" target="/blank"><i class='bx bxl-facebook-circle'></i></a></li>
+			<li><a href="https://www.instagram.com/dj21_vicky21_/" target="/blank"><i class='bx bxl-instagram-alt' ></i></a></li>
+			<li><a href="mailto:djvicky141@gmail.com" target="/blank"><i class='bx bxl-google'></i></a></li>
+			<li><a href="https://github.com/dj21-vicky21" target="/blank"><i class='bx bxl-github'></i></a></li>
+		</ul>
+		
+	</div>
+</div>
+	</div>
+</body>
+</html>
