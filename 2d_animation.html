@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>2d</title>
+	<meta name="viewport" content="width=device-width ,initial-scale=1.0">
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+		body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		ul{
+			list-style-type: none;
+		}
+		li:nth-child(1){
+			position: relative;
+			top: 50vh;
+			background: gray;
+			width: 200px;
+			height: 50px;
+			transform: skew(45deg);
+			text-align: center;
+			overflow: hidden;
+		
+		}
+		li:nth-child(2){
+			position: relative;
+			top: 50vh;
+			background: red;
+			width: 200px;
+			height: 50px;
+			left: 25px;
+			text-align: center;
+			overflow: hidden;
+			
+		}
+		li:nth-child(3){
+			position: relative;
+			top: 50vh;
+			background: green;
+			width: 200px;
+			height: 50px;
+			transform: skew(-45deg);
+			text-align: center;
+			overflow: hidden;
+			
+		}
+		#three{
+			position: relative;
+			top:95%;
+			animation: ani 5s linear ;
+			animation-delay: 0s;transition: all 5s;
+
+
+		}
+		#two{
+			position: relative;
+			top:95%;
+			animation: anii 4s linear ;
+			animation-delay: 2.8s;transition: all 5s;
+
+
+		}
+		#one{
+			position: relative;
+			top:95%;
+			animation: aniii 4s  forwards ;
+			animation-delay: 4.8s;transition: all 5s;
+
+		}
+		@keyframes ani{
+			0%{
+				top: 90%;
+			}
+			50%{
+				top: 0%;
+			}
+			100%{
+				top: -90%;
+			}
+
+		}
+
+
+		@keyframes anii{
+			0%{
+				top: 90%;
+			}
+			50%{
+				top: 50%%;
+			}
+			100%{
+				top: -90%;
+			}
+			
+
+		}
+
+		@keyframes aniii{
+			0%{
+				top: 90%;
+			}
+			50%{
+				top: 50%%;
+			}
+			100%{
+				top: 0%;
+			}
+
+		}
+	</style>
+</head>
+<body>
+     <ul>
+     	<li><h4 id="one">hello <br> world</h4></li>
+     	<li><h4 id="two">hello <br> world</h4></li>
+     	<li><h4 id="three">hello <br> world</h4></li>
+     </ul>
+</body>
+</html>
