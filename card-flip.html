@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>card flip</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+			
+		}
+		body{
+			background: #444;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+
+		}
+		body .con{
+			/*background:red ;*/
+			position: absolute;
+			width: 30%;
+			height: 30%;
+			border-radius: 4%;
+			transition: 1.5s all;
+			transform-style: preserve-3d;
+			perspective: 1000px;
+			
+
+
+		}
+		
+		body .con .font{
+			width: 100%;
+			height: 100%;
+			background: greenyellow;
+			position: absolute;
+			border-radius: 4%;
+			display: flex;
+			align-items: center;
+			/*justify-content: center;*/
+			transition: 1.5s all;
+			backface-visibility: hidden;
+			box-shadow: 0 0 2px white,
+						0 0 15px white,
+						0 0 2px white;
+		}
+		body .con:hover #font{
+			transform: rotateY(-180deg);
+			transition: 1.5s all;
+			transform-style: preserve-3d;
+			perspective: 1000px;
+			
+		}
+		.con .font .photo {
+			position: absolute;
+			
+		}
+		.con .font .photo img{
+			border-radius: 7%;
+			position: relative;
+			left: 3.5%;
+		}
+		.con .font .name{
+			position: absolute;
+			left: 30%;
+			top: 30%;
+			text-transform: uppercase;
+		}
+		.con .font .dob{
+			position: absolute;
+			left: 30%;
+			top: 45%;
+			text-transform: uppercase;
+		}
+		body .con .back{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background: greenyellow;
+			border-radius: 4%;
+			z-index: -1;
+			transition: 1.5s all;
+			transform: rotateY(180deg);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-transform: uppercase;
+			box-shadow: 0 0 2px  white,
+						0 0 15px  white,
+						0 0 2px  white;
+		}
+		body .con:hover #back{
+			transform: rotateY(0deg);
+			transition: 1.5s all;
+			transform-style: preserve-3d;
+			perspective: 1000px;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div class="con">
+		<div class="card">
+			<div class="font" id="font">
+				<div class="photo">
+					<img src="/home/dj21_vicky21_/Pictures/person.jpg" width="20%">
+				</div>
+				<div class="name">
+					player 456
+				</div>
+				<div class="dob">
+					04/05/06
+				</div>
+			</div>
+			<div class="back" id="back">
+				player 456
+			</div>
+		</div>
+	</div>
+</body>
+</html>
