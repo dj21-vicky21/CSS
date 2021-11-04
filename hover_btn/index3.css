@@ -1,0 +1,73 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #444;
+}
+.one{
+    background:  #61ec11 ;
+    width: 20%;
+    position: absolute;
+    font-size: 23px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.one:before{
+    content: "DHANANJEZHIAN.J";
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    top:-230%;
+    background:  #f67a0c ;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    display: none;
+    z-index: 1.5;
+    line-height: 4vh;
+    box-shadow: 0 -4px 10px  #f61d0c ,
+                0 -4px 20px #fff,
+                0 -4px 30px  #f61d0c,
+                0 -4px 35px  #f61d0c;
+                background: radial-gradient(#fff,#f67a0c)
+    
+}
+.one:after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background:  orange ;
+    transform: rotate(45deg);
+    top: -175%;
+    display: none;
+    left: 45%;
+    z-index: -2;
+    box-shadow: 0 0 10px  #f61d0c,
+                0 0 20px #fff,
+                0 0 30px  #f61d0c;
+
+    
+}
+.one:hover{
+    background: radial-gradient(#fff,#61ec11);
+}
+
+
+
+.one:hover:before{
+    display: block;
+    
+}
+.one:hover:after{
+    display: block;
+}
