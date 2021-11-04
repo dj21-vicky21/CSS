@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: 0.6s all;
+
+
+}
+body{
+    background: #444;
+}
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+fieldset{
+    border:10px  double black;
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    padding: 30px;
+    border-radius: 10px;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+legend{
+    border: 5px double black;
+    border-radius: 10px;
+    padding: 2px;
+    background: green;
+    /*left: 10px;*/
+    position: relative;
+}
+p{
+    display: none;
+}
+fieldset:hover p{
+    display: block;
+
+}
+legend span{
+    color: black;
+}
+
+p span:nth-child(odd){
+    color: white;
+}
+fieldset:hover legend span:nth-child(odd){
+    color: whitesmoke;
+    
+}
+
+fieldset:hover{
+    transform: scale(1.5);
+    border: 10px double pink;
+    box-shadow: 0 0 20px  #ff4af9 ,
+                0 0 30px  white ,
+                0 0 10px  #ff4af9 ;
+}
+fieldset:hover section{
+    display: none;
+}
+section{
+    font-size: 23px;
+}
