@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background: #555;*/
+    min-height: 100vh;
+}
+i:nth-child(1){
+    font-size: 250px;
+    position: absolute;
+    /*background: yellow;*/
+}
+i:nth-child(2){
+    font-size: 250px;
+    position: absolute;
+    /*background: red;*/
+}
+i:nth-child(2):before{
+    content: "";
+    width: 350px;
+    height: 260px;
+    top: 0px;
+    left: 0px;
+    background: yellow;
+    position: relative;
+    filter: blur(70px);
+    overflow: hidden;
+    display: none;
+    transition: 5s all;
+
+}
+.switch{
+    width: 4%;
+    height: 7%;
+    position: absolute;
+    background: black;
+    right: 10%;
+    border: 5px double red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.switch div{
+    position: absolute;
+    width: 10px;
+    height: 30px;
+    top: -10px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background: linear-gradient(#3d3d73,#3d5873);
+
+}
+.switch div:before{
+    content: "";
+    width: 100%;
+    height: 20%;
+    border-radius: 50%;
+    background: linear-gradient(180deg,red,transparent);
+    position: absolute;
+}
+.switch div:after{
+    content: "";
+    width: 100%;
+    height: 20%;
+    border-radius: 50%;
+    background: darkcyan;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+#switch:checked ~ .container .switch div{
+    /*height: 20px;*/
+    top: 0;
+    transform: translateY(20px);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: linear-gradient(#3d5873,#3d3d73);
+
+}
+#switch:checked ~ .container i:nth-child(2):before{
+    display: block;
+    transition:0.5s all;
+}
+#switch:checked ~ .container{
+    background: #333;
+    transition: 0.5s all;
+}
+input{
+    display: none;
+}
+#switch:checked ~ .container .switch div:before{
+    display: none;
+}
+#switch:checked ~ .container .switch div:after{
+    display: block;
+    background: linear-gradient(380deg,red,transparent);
+}
