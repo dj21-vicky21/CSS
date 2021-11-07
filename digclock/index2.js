@@ -8,6 +8,25 @@ setInterval(() => {
     var yeas = da.getFullYear();
     var dayys = da.getDay();
     var ampm = 'am';
+    if(hrs < 6){
+        document.getElementById('clock').style.background = 'URL(https://i.pinimg.com/originals/76/d7/01/76d701b907da257137c81b7c69523c01.gif)';
+        document.getElementById('clock').style.backgroundSize = 'cover';
+    }
+    if(hrs >=6){
+        document.getElementById('clock').style.background = 'URL(https://www.gifimages.pics/images/quotes/english/general/good-morning-sunrise-animated-gif-52650-297553.gif)';
+        document.getElementById('clock').style.backgroundSize = 'cover';
+    }
+    if(hrs >=12){
+        document.getElementById('clock').style.background = 'URL(https://www.gifimages.pics/images/quotes/english/general/good-afternoon-sun-animated-gif-52650-93167.gif)';
+        document.getElementById('clock').style.backgroundSize = 'cover';
+    }
+    if(hrs>=16){
+        document.getElementById('clock').style.background = 'URL(https://www.gifimages.pics/images/quotes/english/general/good-evening-gif-sun-boat-52650-93248.gif) ';
+        document.getElementById('clock').style.backgroundSize = 'cover';
+    }if(hrs>=18){
+        document.getElementById('clock').style.background = 'URL(https://i.pinimg.com/originals/76/d7/01/76d701b907da257137c81b7c69523c01.gif)';
+        document.getElementById('clock').style.backgroundSize = 'cover';
+    }
     if(hrs < 12){
         ampm = "AM";
     }else{
@@ -55,25 +74,7 @@ setInterval(() => {
     if(dayys ==  7){
         dayys = 'SUN'
     }
-    if(hrs < 6){
-        document.getElementById('clock').style.background = 'URL(https://i.pinimg.com/originals/76/d7/01/76d701b907da257137c81b7c69523c01.gif)';
-        document.getElementById('clock').style.backgroundSize = 'cover';
-    }
-    if(hrs >=6){
-        document.getElementById('clock').style.background = 'URL(https://www.gifimages.pics/images/quotes/english/general/good-morning-sunrise-animated-gif-52650-297553.gif)';
-        document.getElementById('clock').style.backgroundSize = 'cover';
-    }
-    if(hrs >=12){
-        document.getElementById('clock').style.background = 'URL(https://www.gifimages.pics/images/quotes/english/general/good-afternoon-sun-animated-gif-52650-93167.gif)';
-        document.getElementById('clock').style.backgroundSize = 'cover';
-    }
-    if(hrs>=16){
-        document.getElementById('clock').style.background = 'URL(https://www.gifimages.pics/images/quotes/english/general/good-evening-gif-sun-boat-52650-93248.gif) ';
-        document.getElementById('clock').style.backgroundSize = 'cover';
-    }if(hrs>=19){
-        document.getElementById('clock').style.background = 'URL(https://i.pinimg.com/originals/76/d7/01/76d701b907da257137c81b7c69523c01.gif)';
-        document.getElementById('clock').style.backgroundSize = 'cover';
-    }
+    
     document.getElementById('hr').textContent = hrs;
     document.getElementById('min').textContent = mins;
     document.getElementById('sec').textContent = secs;
