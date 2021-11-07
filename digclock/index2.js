@@ -71,7 +71,7 @@ setInterval(() => {
     if(dayys == 6){
         dayys = 'SAT'
     }
-    if(dayys ==  7){
+    if(dayys ==  0){
         dayys = 'SUN'
     }
     
