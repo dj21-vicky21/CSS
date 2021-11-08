@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eye</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background: #444;
+        }
+        .con{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+
+
+        }
+        .con .shape{
+            width: 200px;
+            height: 100px;
+            background: #fff;
+            clip-path: ellipse(50% 33% at 50% 50%);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .con .shape::before{
+            content: '';
+            width: 100%;
+            clip-path: ellipse(50% 33% at 50% 50%);
+            height: 100%;
+            top: -70px;
+            background: rgb(255, 135, 79);
+            position: absolute;
+            animation:  ani 2s alternate infinite ease-in-out;}
+
+          @keyframes ani{
+              0%{
+                  top: -70%;
+              }
+              100%{
+                  top: 0;
+              }
+          }  
+          .con .shape .innershape{
+              position: absolute;
+              width: 100px;
+              height: 50px;
+              background: #111;
+              z-index: -1;
+              border-radius: 50%;
+          }
+          .con .shape:nth-child(2){
+              margin: 30px;
+          }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="shape">
+            <div class="innershape">
+                <div class="circle"></div>
+            </div>      
+        </div>
+        <div class="shape">
+            <div class="innershape">
+                <div class="circle"></div>
+            </div>      
+        </div>
+    </div>
+</body>
+</html>
