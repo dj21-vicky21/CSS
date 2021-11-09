@@ -1,14 +1,71 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title></title>
+<title>symbols</title>
 </head>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body,html{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #555;
+            min-height: 100vh;
+        }
+        h1{
+            border-bottom: 5px double #fff;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        .first{
+            display: inline-flex;
+            font-size: 23px;
+            line-height: 50px;
+        }
+        span:nth-child(even){
+            background: #888;
+            border-bottom: 3px solid black;
+        }
+        span:nth-child(odd){
+            background: #888;
+            border-bottom: 3px solid black;
+        }
+    </style>
 <body>
-<h1>this content display <the &symbol> </h1>
-<h1>this content display  &lt;the &amp symbol&gt; </h1>
-<h2>copy rights symbol &copy;</h2> <! the function display copy rights symbol!>
-<p>&quot;A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. ... Paragraphs can contain
- many different kinds of information. A paragraph could contain a series of brief examples or a single long illustration 
-of a general&nbsp;point&quot;.</p><! &nbsp; is  link the txt between space,and &quot; is used for endcoding words display correctly !>
+<div class="con">
+<h1>symbols</h1>
+<div class="first">
+<pre>
+<span>&</span><span>lt;</span>         &lt;
+<span>&</span><span>gt;</span>         &gt;
+<span>&</span><span>para;</span>       &para;
+<span>&</span><span>amp;</span>        &amp;
+<span>&</span><span>quot;</span>       &quot;
+<span>&</span><span>#x20B9;</span>     &#x20B9;
+<span>&</span><span>cent;</span>       &cent;
+<span>&</span><span>pound;</span>      &pound;
+<span>&</span><span>euro;</span>       &euro;
+<span>&</span><span>copy;</span>       &copy;
+<span>&</span><span>reg;</span>        &reg;
+<span>&</span><span>trade;</span>      &trade;
+<span>&</span><span>lsquo;</span>      &lsquo;
+<span>&</span><span>rsquo;</span>      &rsquo;
+<span>&</span><span>ldquo;</span>      &ldquo;
+<span>&</span><span>rdquo;</span>      &rdquo;
+<span>&</span><span>times;</span>      &times;
+<span>&</span><span>divide;</span>     &divide;
+<span>&</span><span>dollar;</span>     &dollar;
+<span>&</span><span>plus;</span>       &plus;
+<span>&</span><span>minus;</span>      &minus;
+<span>&</span><span>nbsp;</span>   &nbsp;("single 
+           white 
+           space")
+</pre>
+</div>
+</div>
 </body>
 </html>
