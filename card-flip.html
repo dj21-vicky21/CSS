@@ -9,6 +9,8 @@
 			margin: 0px;
 			padding: 0px;
 			box-sizing: border-box;
+			transform-style: preserve-3d;
+			perspective: 5000px;
 			
 		}
 		body{
@@ -19,102 +21,95 @@
 			height: 100vh;
 
 		}
-		body .con{
-			/*background:red ;*/
-			position: absolute;
-			width: 30%;
-			height: 30%;
-			border-radius: 4%;
-			transition: 1.5s all;
-			transform-style: preserve-3d;
-			perspective: 1000px;
+		body .con .card{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 350px;
+			height: 200px;
 			
-
-
+			
+		}
+		body .con .card::before{
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 10%;
+			box-shadow:  0 0 20px 5px black,
+						 0 0 30px black,
+						 0 0 20px black;
+			bottom: -50px;
+			filter: blur(30px);
+			z-index: -111;
+		}
+		body .con .card:hover:before{
+			transform: rotateY(-180deg);
+			transform-style: flat;
 		}
 		
-		body .con .font{
-			width: 100%;
-			height: 100%;
-			background: greenyellow;
-			position: absolute;
-			border-radius: 4%;
-			display: flex;
-			align-items: center;
-			/*justify-content: center;*/
-			transition: 1.5s all;
-			backface-visibility: hidden;
-			box-shadow: 0 0 2px white,
-						0 0 15px white,
-						0 0 2px white;
-		}
-		body .con:hover #font{
-			transform: rotateY(-180deg);
-			transition: 1.5s all;
-			transform-style: preserve-3d;
-			perspective: 1000px;
-			
-		}
-		.con .font .photo {
-			position: absolute;
-			
-		}
-		.con .font .photo img{
-			border-radius: 7%;
+		body .con .card .font{
 			position: relative;
-			left: 3.5%;
-		}
-		.con .font .name{
-			position: absolute;
-			left: 30%;
-			top: 30%;
-			text-transform: uppercase;
-		}
-		.con .font .dob{
-			position: absolute;
-			left: 30%;
-			top: 45%;
-			text-transform: uppercase;
-		}
-		body .con .back{
 			width: 100%;
 			height: 100%;
-			position: absolute;
-			background: greenyellow;
-			border-radius: 4%;
-			z-index: -1;
-			transition: 1.5s all;
-			transform: rotateY(180deg);
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			background: yellow;
+			border-radius: 10px;
+			backface-visibility: hidden;
+			transition: 2s all;
 			text-transform: uppercase;
-			box-shadow: 0 0 2px  white,
-						0 0 15px  white,
-						0 0 2px  white;
+			box-shadow: inset 0 0 20px orange,
+						inset 0 0 20px orange,
+						inset 0 0 20px orange;
+			
 		}
-		body .con:hover #back{
-			transform: rotateY(0deg);
-			transition: 1.5s all;
-			transform-style: preserve-3d;
-			perspective: 1000px;
+		body .con .card .font .dob{
+			display: block;
+			/* text-transform: uppercase; */
+			margin-left: 10px;
 		}
+		body .con .card:hover .font{
+			transform: rotateY(-180deg);
+			transition: 2s all;
+		}
+		body .con .card .back{
+			position: absolute;
+			width: 350px;
+			height: 200px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: yellow;
+			border-radius: 10px;
+			transform: rotateY(180deg);
+			/* display: none; */
+			backface-visibility: hidden;
+			transition: 2s all;
+			text-transform: uppercase;
+			box-shadow: inset 0 0 20px orange,
+						inset 0 0 20px orange,
+						inset 0 0 20px orange;
+			
 
-		
+			
+		}
+		body .con .card:hover .back{
+			transform: rotateY(0deg);
+			transition: 2s all;
+		}
+		}
 	</style>
 </head>
 <body>
 	<div class="con">
 		<div class="card">
 			<div class="font" id="font">
-				<div class="photo">
-					<img src="/home/dj21_vicky21_/Pictures/person.jpg" width="20%">
-				</div>
 				<div class="name">
-					player 456
+					squid game
 				</div>
 				<div class="dob">
-					04/05/06
+					your no:
 				</div>
 			</div>
 			<div class="back" id="back">
