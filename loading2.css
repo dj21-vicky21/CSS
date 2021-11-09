@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body,html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #777;
+}
+.con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    /* background: coral; */
+    border-radius: 50%;
+    border-top:20px solid black;
+    border-right:20px solid black;
+    border-bottom:20px solid transparent;
+    border-left:20px solid transparent;
+    animation: ani1 3s linear infinite;
+}
+.two{
+    width: 210px;
+    height: 210px;
+    position: absolute;
+    /* background: coral; */
+    border-radius: 50%;
+    border-bottom:20px solid red;
+    border-left:20px solid red;
+    border-top:20px solid transparent;
+    border-right:20px solid transparent;
+    animation: ani2 3s linear infinite;
+}
+
+.three{
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    /* background: coral; */
+    border-radius: 50%;
+    border-top:20px solid black;
+    border-right:20px solid black;
+    border-bottom:20px solid transparent;
+    border-left:20px solid transparent;
+     animation: ani1 3s linear infinite;
+}
+.four{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    /* background: coral; */
+    border-radius: 50%;
+    border-bottom:20px solid red;
+    border-left:20px solid red;
+    border-top:20px solid transparent;
+    border-right:20px solid transparent;
+    animation: ani2 3s linear infinite;
+}
+.five{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    /* background: coral; */
+    border-radius: 50%;
+    border-top:20px solid black;
+    border-right:20px solid black;
+    border-bottom:20px solid transparent;
+    border-left:20px solid transparent;
+     animation: ani1 3s linear infinite;
+}
+.six{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    /* background: coral; */
+    border-radius: 50%;
+    border-bottom:20px solid red;
+    border-left:20px solid red;
+    border-top:20px solid transparent;
+    border-right:20px solid transparent;
+    animation: ani2 3s linear infinite;
+}
+.seven{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    /* background: coral; */
+    border-radius: 50%;
+    border-top:20px solid black;
+    border-right:20px solid black;
+    border-bottom:20px solid transparent;
+    border-left:20px solid transparent;
+    animation: ani1 3s linear infinite;
+    
+}
+@keyframes ani1{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes ani2{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
