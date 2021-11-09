@@ -9,111 +9,99 @@
 			margin: 0px;
 			padding: 0px;
 			box-sizing: border-box;
-			transition: 1s all;
-			scroll-behavior: smooth;
+			
 		}
-		.con{
+		input{
+			display: none;
+		}
+		body,html{
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			background:   #e773e7  ;
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			transition: 1s all;
+			min-height: 100vh;
 		}
-		.con .slide{
-			display: flex;
-			align-items: center;
-			position: absolute;
-			width: 550px;
-			height: 550px;
-			/*background: red;*/
-			border-radius: 10px;
+		.slide{
+			width: 450px;
+			height: 450px;
 			overflow: hidden;
-			transition: 1s all;
-			
+			border-radius: 5px;
 		}
-		.con .slide img{
-			border-radius: 10px;
+		.img{
+			display: flex;
+		}
+		#radio1:checked ~ .con .slide .img{
+			left: 0px;
+			/* display: none; */
+			position: relative;
 			transition: 1s all;
-			}
-			.con .slide .img{
-				display: flex;
-				transition: 1s all;
-				
-			}
-			.con  .lab label{
-				display:inline-flex;
-				border: 2px solid  #d01d1d ;
-				border-radius: 50%;
-				width: 17px;
-				height: 17px;
-				position: relative;
-				margin-left: 3px;
-			    top:250px;
-			    box-shadow:inset  0 0 3px   white ,
-			                0 0 0px  white ,
-			                0 0 0px  white ,
-			                0 0 0px  white ,
-			                0 0 0px  white ;
-
-			}
-			input{
-				display: none;
-			}
-			#radio1:checked~ .con .slide .img{
-				position: relative;
-				left: 0px;
-				transition: 1s all;
-			}
-			#radio1:checked~ .con  .lab #lab1{
-				background:   #5066ff  ;
-				transition: 1s all;
-			}
-			#radio2:checked~ .con .slide .img{
-				position: relative;
-				left: -550px;
-				transition: 1s all;
-				scroll-behavior: smooth;
-			}
-			#radio2:checked~ .con  .lab #lab2{
-				background:   #5066ff  ;
-				transition: 1s all;
-			}
-			#radio3:checked~ .con .slide .img{
-				position: relative;
-				left: -1100px;
-				transition: 1s all;
-			}
-			#radio3:checked~ .con  .lab #lab3{
-				background:   #5066ff  ;
-				transition: 1s all;
-
-			}
-
-			.con  .lab #lab1{
-				background: #5066ff  ;
-
-			}
-			#radio2:checked~.con  .lab #lab1{
-				background: no-repeat;
-
-			}
-			#radio3:checked~.con  .lab #lab1{
-				background: no-repeat;
-
-			}
-
-
-
-			
-
-
-
-
-
-
+		}
+		#radio2:checked ~ .con .slide .img{
+			left: -450px;
+			/* display: none; */
+			position: relative;
+			transition: 1s all;
+		}
+		#radio3:checked ~ .con .slide .img{
+			left: -900px;
+			/* display: none; */
+			position: relative;
+			transition: 1s all;
+		}
+		.lab{
+			text-align: center;
+			position: relative;
+			top: 20px;
+			transition: 0s all;
+		}
+		#lab1{
+			width: 15px;
+			height: 15px;
+			position: absolute;
+			border:1px solid #111;
+			border-radius: 50%;
+		}
+		#lab2{
+			width: 15px;
+			height: 15px;
+			border:1px solid #111;
+			position: absolute;
+			border-radius: 50%;
+		}
+		#lab3{
+			width: 15px;
+			height: 15px;
+			border:1px solid #111;
+			position: absolute;
+			border-radius: 50%;
+		}
+		
+		#radio1:checked ~ .con .lab #lab1{
+			background: #111;
+			transition: 0s all;
+			box-shadow: inset 0 0 0 2px #f0f;
+		}
+		#radio2:checked ~ .con .lab #lab2{
+			background: #111;
+			transition: 0s all;
+			box-shadow: inset 0 0 0 2px #f0f;
+		}
+		#radio3:checked ~ .con .lab #lab3{
+			background: #111;
+			transition: 0s all;
+			box-shadow: inset 0 0 0 2px #f0f;
+		}
+		label:nth-child(1){
+			position: relative;
+			left: 40%;
+		}
+		label:nth-child(2){
+			position: relative;
+			left: 50%;
+		}
+		label:nth-child(3){
+			position: relative;
+			left: 60%;
+		}
 	</style>
 </head>
 <body>
@@ -123,9 +111,9 @@
 	<div class="con">
 		<div class="slide">
 			 <div class="img">
-				<img src="/home/dj21_vicky21_/Pictures/owl.jpg" width="550px" height="550px" class="img1">
-				<img src="/home/dj21_vicky21_/Pictures/kingfisher.jpg" width="550px" height="550px" class="img2">
-				<img src="/home/dj21_vicky21_/Pictures/pink.jpg" width="550px" height="550px" class="img3">
+				<img src="https://docs.google.com/uc?id=10Gbj3ybQPOaqe2T-Z_QxiFTJ31_Qc24i" width="450px" height="450px" class="img1">
+				<img src="https://docs.google.com/uc?id=1uL_tarjeNn9ns9acuIZCF5C8t9DlZb4W" width="450px" height="450px" class="img2">
+				<img src="https://docs.google.com/uc?id=12aTt9JP7nR5ZrNry-gKjqzKA_BWZFN83" width="450px" height="450px" class="img3">
 			</div> 
 		</div>
 		<div class="lab">

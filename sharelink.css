@@ -4,13 +4,23 @@
 	text-decoration: none;
 	text-align: center;
 }
-
+body,html{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: rgb(125, 155, 155,1);
+}
 .share ul{
 	list-style-type: none;background: lightgray;border-radius: 10px;
 }
 .share ul li{
 	display: inline;
+	margin-left: 10px;
+}
+.share ul li:last-child{
+	margin-right: 10px;
 }
 .share ul li .bx:hover{
-	background: grey;transform: scale(1.1);border-radius: 10px;
+	background: rgb(155, 155, 155);transform: scale(1.1);border-radius: 10px;
 }
