@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body,html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #777;
+}
+.con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-top: 15px solid #111;
+    border-right: 15px solid #111;
+    border-radius: 50%;
+    animation: ani1 3s linear infinite;
+}
+.two{
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-bottom: 15px solid #fff;
+    border-left: 15px solid #fff;
+    border-radius: 50%;
+    animation: ani2 3s linear infinite;
+}
+.three{
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    border-top: 15px solid #111;
+    border-right: 15px solid #111;
+    border-radius: 50%;
+    animation: ani1 3s linear infinite;
+}
+.four{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-bottom: 15px solid #fff;
+    border-left: 15px solid #fff;
+    border-radius: 50%;
+    animation: ani2 3s linear infinite;
+}
+.five{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-top: 15px solid #111;
+    border-right: 15px solid #111;
+    border-radius: 50%;
+    animation: ani1 3s linear infinite;
+}
+.six{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-bottom: 15px solid #fff;
+    border-left: 15px solid #fff;
+    border-radius: 50%;
+    animation: ani2 3s linear infinite;
+}
+.seven{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-top: 15px solid #111;
+    border-right: 15px solid #111;
+    border-radius: 50%;
+    animation: ani1 3s linear infinite;
+}
+.eight{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    animation: ani2 3s linear infinite;
+}
+
+@keyframes ani1{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes ani2{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
