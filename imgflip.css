@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #999;
+}
+.con{
+    width: 310px;
+    height: 460px;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+.con .front{
+    position: absolute;
+    width: 300px;
+    height: 450px;
+    backface-visibility: hidden;
+    transition: 1.5s all;
+}
+.con:hover .front{
+    transform: rotateY(-180deg);
+}
+.con .back{
+    /* position: absolute; */
+    width: 300px;
+    height: 450px;
+    transform: rotateY(180deg);
+    transition: 1.5s all;
+    backface-visibility: hidden;
+}
+.con:hover .back{
+    transform: rotateY(0deg);
+}
+img{
+    border-radius: 10px;
+    
+}
