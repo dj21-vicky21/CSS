@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display_date</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+            top:50px;
+        }
+        div > div{
+            display: flex;
+            justify-content: center;
+            top: 70px;
+            position: relative;
+        }
+        button{
+            padding: 20px;
+            font-size: 15px;
+            text-transform: uppercase;
+        }
+        button:active{
+            transform: scale(0.9);
+        }
+        h2{
+            text-align: center;
+            position: relative;
+            top: 100px;
+        }
+    </style>
+</head>
+<body id="body">
+    <div>
+        <h1 id="h1">get date and time click below</h1>
+        <div><button type="button" onclick="display()" id="btn">get_date_and_time</button></div>
+        <h2 id="h2">hello</h2>
+    </div>
+    <script>
+        let h2 =document.getElementById('h2'),
+            body = document.getElementById('body'),
+            h1 =document.getElementById('h1'),
+            btn =document.getElementById('btn');
+        function display(){
+            body.style.backgroundColor='#111';
+            h1.style.color='#fff';
+            btn.style.borderColor='#fff';
+            btn.style.color='#fff';
+            btn.style.backgroundColor='#111';
+            h2.style.color='#fff'
+           setInterval(() => {
+            h2.innerHTML=Date() 
+           }, );
+        }
+    </script>
+</body>
+</html>

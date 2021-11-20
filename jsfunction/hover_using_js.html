@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hove_using_js</title>
+    <style>
+        
+      *{
+        margin: 0px;
+      }
+      body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+
+      }
+      body > div{
+        border: 5px solid #2fab5e;
+        width: 90%;
+        height: 500px;
+        padding: 10px;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        position: relative;
+        background: rgba(0, 0, 0, 0.1);
+      }
+
+      img{
+        width: 250px;
+        height: 250px;
+        position: relative;
+        border: 10px solid #2fab5e;
+        margin: 10px;
+        top: 150px;
+        border-radius: 10px;
+      }
+      body div > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 10px;
+        position: absolute;
+      }
+      
+      h1{
+        background: #fff;
+        padding: 20px;
+        width: 350px;
+        text-align: center;
+        border:10px solid #111;
+        border-radius: 10px;
+        text-transform: uppercase;
+        color: crimson;
+      }
+    </style>
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <h1 id="h1">hover any img</h1>
+        </div>
+        <img src="https://cdn.pixabay.com/photo/2011/12/13/14/28/earth-11008_960_720.jpg" alt="earth" onmouseover="hov(this)" onmouseout="h1.innerHTML='hover any img'">
+        <img src="https://cdn.pixabay.com/photo/2012/01/09/09/10/sun-11582__340.jpg" alt=" sun"
+        onmouseover="hov(this)" onmouseout="h1.innerHTML='hover any img'">
+        <img src="https://cdn.pixabay.com/photo/2016/11/29/13/14/full-moon-1869760_960_720.jpg" alt="moon" 
+        onmouseover="hov(this)" onmouseout="h1.innerHTML='hover any img'">
+    </div>
+  
+  
+    <script>
+      let h1 = document.getElementById('h1');
+      function hov(element){
+        h1.innerHTML=element.alt;
+      }
+    </script>
+</body>
+</html>
