@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svg_effect</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: #111;
+        }
+        svg{
+            font-size: 150px;
+            padding-top: 11%;
+        }
+        .copy{
+            fill: none;
+            stroke:#fff;
+            stroke-width: 3px;
+            stroke-dasharray: 8% 30%;
+            stroke-dashoffset: 0;
+            animation:  text 6s linear infinite;
+        }
+        @keyframes text{
+            100%{
+                stroke-dashoffset: -35%;
+            }
+        }
+        .copy1{
+            stroke: red;
+            animation-delay:-1s;
+        }
+        .copy2{
+            stroke: yellow;
+            animation-delay:-2s;
+        }
+        .copy3{
+            stroke: green;
+            animation-delay:-3s;
+        }
+        .copy4{
+            stroke: blue;
+            animation-delay:-4s;
+        }
+        .copy5{
+            stroke: orange;
+            animation-delay:-5s;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg viewBox = '0 -120 1000 400'>
+            <text id="text" x= '50%' y="50" text-anchor ='middle' fill= 'none'></text>
+             <use xlink:href='#text' class=" copy copy1"></use>   
+             <use xlink:href='#text' class=" copy copy2"></use>   
+             <use xlink:href='#text' class=" copy copy3"></use>   
+             <use xlink:href='#text' class=" copy copy4"></use>   
+             <use xlink:href='#text' class=" copy copy5"></use>   
+        </svg>
+    </div>  
+    <script>
+        let text = document.getElementById('text'),
+        inpu = prompt('enter the word');
+        text.innerHTML=inpu;        
+    </script>
+</body>
+</html>
