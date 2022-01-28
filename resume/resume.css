@@ -365,8 +365,7 @@ input{
         width: 100%;
         height: 93%;
         margin: 0px;
-        top: 220px;
-        z-index: -1;
+        top: 240px;
     }
     #body .rig .cons{
         display: block;
