@@ -15,10 +15,10 @@ input{
 
 #dark:checked ~ .container {
 filter: invert(1);
-transition: all 1s;
 }
 #dark:checked ~  .container .head{
     background-color: rgb(225, 225, 210,0.9);
+    transition: all 1s;
 }
 #dark:checked ~  .container .body .share{
     background-color: rgb(225, 225, 210,0.9);
@@ -112,7 +112,6 @@ transition: all 1s;
 .container .body{
     width: 100%;
     height: 90%;
-    /* background-color: red; */
     position: relative;
 }
 .container .body .b{
@@ -126,13 +125,15 @@ transition: all 1s;
     grid-template-columns: 25% 25% 25% 25%;
     text-align: center;
     /* background-color: red; */
-    /* column-gap: 0.75px; */
+    column-gap: 0.75px;
     position: relative;
-    row-gap: 0.75px;
+    row-gap: 1px;
+    margin: 5px 0 5px 15px ;
+    overflow: hidden;
     
 }
 .container .body .b ul li{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: 2%;
     font-size: 200%;
     text-transform: capitalize;

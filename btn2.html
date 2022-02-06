@@ -19,13 +19,14 @@
 			width: 200px;
 			height: 100px;
 			/*background: red;*/
-			border: 0.5px solid black;
+			border: 0.5px solid #111;
 			border-radius: 10px;
 			position: absolute;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			overflow: hidden;
+			transition: all 2s;
 
 		}
 		div:before{ 
@@ -41,6 +42,7 @@
 			border-top-left-radius: 8px;
 			border-bottom-left-radius: 8px;
 			z-index: -1;
+			transition: all 2s;	
 			
 		}
 		div:after{
@@ -56,6 +58,7 @@
 			border-top-right-radius: 8px;
 			border-bottom-right-radius: 8px;
 			z-index: -1;
+			transition: all 2s;	
 			
 		}
 		div:hover:before{
