@@ -8,6 +8,7 @@ setInterval(() => {
     var yeas = da.getFullYear();
     var dayys = da.getDay();
     var ampm = 'am';
+    mons = mons+1
     if(hrs < 6){
         document.getElementById('clock').style.background = 'URL(https://i.pinimg.com/originals/76/d7/01/76d701b907da257137c81b7c69523c01.gif)';
         document.getElementById('clock').style.backgroundSize = 'cover';
