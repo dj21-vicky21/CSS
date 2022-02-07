@@ -66,14 +66,12 @@ filter: invert(1);
     align-items: center;
     position: relative;
 }
-.container .head .h_left p{
+.container .head .h_left span{
     left: 10%;
     position: relative;
-    border: 2.5px solid black;
     height: 90%;
-    border-radius: 50%;
-    padding: 2%;
     position: relative;
+    padding: 2% 5% 2% 5%;
     /* background-color: red; */
     display: flex;
     align-items: center;
@@ -119,8 +117,10 @@ filter: invert(1);
     height: 90%;
     /* background-color: red; */
     overflow: scroll;
+    
 }
 .container .body .b ul{
+    width: 100%;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     text-align: center;
@@ -128,14 +128,12 @@ filter: invert(1);
     column-gap: 0.75px;
     position: relative;
     row-gap: 1px;
-    margin: 5px 0 5px 15px ;
     overflow: hidden;
-    
 }
 .container .body .b ul li{
     /* border: 2px solid black; */
     padding: 2%;
-    font-size: 200%;
+    font-size: 170%;
     text-transform: capitalize;
     position: relative;
     width: 100%;
@@ -170,11 +168,12 @@ filter: invert(1);
     align-items: center;
     justify-content: center;
     transition: all 1s;
+    padding-top: 25px;
+    padding-bottom: 15px;
 }
 .container .body .share ul{
     display: flex;
 }
-
 .container .body .share ul li{
     /* padding-left: 10px; */
     font-size: 23px;
