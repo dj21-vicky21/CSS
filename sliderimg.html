@@ -117,7 +117,118 @@
 		label{
 			background: #111;
 		}
-		
+		.con .slide .img .load{
+			width: 100%;
+			height: 100%;
+			z-index: 100;
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transform: scale(0.5);
+		}
+		.one{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    /* background: coral; */
+    border-radius: 50%;
+    border-top:20px solid black;
+    border-right:20px solid black;
+    border-bottom:20px solid transparent;
+    border-left:20px solid transparent;
+    animation: ani1 3s linear infinite;
+}
+.two{
+    width: 210px;
+    height: 210px;
+    position: absolute;
+    /* background: coral; */
+    border-radius: 50%;
+    border-bottom:20px solid red;
+    border-left:20px solid red;
+    border-top:20px solid transparent;
+    border-right:20px solid transparent;
+    animation: ani2 3s linear infinite;
+}
+
+.three{
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    /* background: coral; */
+    border-radius: 50%;
+    border-top:20px solid black;
+    border-right:20px solid black;
+    border-bottom:20px solid transparent;
+    border-left:20px solid transparent;
+     animation: ani1 3s linear infinite;
+}
+.four{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    /* background: coral; */
+    border-radius: 50%;
+    border-bottom:20px solid red;
+    border-left:20px solid red;
+    border-top:20px solid transparent;
+    border-right:20px solid transparent;
+    animation: ani2 3s linear infinite;
+}
+.five{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    /* background: coral; */
+    border-radius: 50%;
+    border-top:20px solid black;
+    border-right:20px solid black;
+    border-bottom:20px solid transparent;
+    border-left:20px solid transparent;
+     animation: ani1 3s linear infinite;
+}
+.six{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    /* background: coral; */
+    border-radius: 50%;
+    border-bottom:20px solid red;
+    border-left:20px solid red;
+    border-top:20px solid transparent;
+    border-right:20px solid transparent;
+    animation: ani2 3s linear infinite;
+}
+.seven{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    /* background: coral; */
+    border-radius: 50%;
+    border-top:20px solid black;
+    border-right:20px solid black;
+    border-bottom:20px solid transparent;
+    border-left:20px solid transparent;
+    animation: ani1 3s linear infinite;
+    
+}
+@keyframes ani1{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes ani2{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
 	</style>
 </head>
 <body>
@@ -130,6 +241,15 @@
 				<img src="https://docs.google.com/uc?id=10Gbj3ybQPOaqe2T-Z_QxiFTJ31_Qc24i" width="450px" height="450px" class="img1">
 				<img src="https://docs.google.com/uc?id=1uL_tarjeNn9ns9acuIZCF5C8t9DlZb4W" width="450px" height="450px" class="img2">
 				<img src="https://docs.google.com/uc?id=12aTt9JP7nR5ZrNry-gKjqzKA_BWZFN83" width="450px" height="450px" class="img3">
+				<div class="load" id="load">
+					<div class="one"></div>
+        			<div class="two"></div>
+        			<div class="three"></div>
+        			<div class="four"></div>
+        			<div class="five"></div>
+        			<div class="six"></div>
+        			<div class="seven"></div>
+				</div>
 			</div> 
 		</div>
 		<div class="lab">
@@ -138,5 +258,12 @@
 			<label for="radio3" id="lab3"></label>
 		</div>
 	</div>
+	<script>
+		var load = document.getElementById('load');
+
+		window.addEventListener('load',function(){
+			load.style.display = 'none';
+		})
+	</script>
 </body>
 </html>
