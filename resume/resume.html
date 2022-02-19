@@ -36,7 +36,17 @@
             <!-- body_start -->
             <div class="body" id="body">
                 <div class="lef">
-                    <div class="imgbox"></div>
+                    <div class="imgbox">
+                        <div class="load" id="load">
+                            <div class="one"></div>
+                            <div class="two"></div>
+                            <div class="three"></div>
+                            <div class="four"></div>
+                            <div class="five"></div>
+                            <div class="six"></div>
+                            <div class="seven"></div>
+                        </div>
+                    </div>
                     <p class="name">dhananjezhian j</p>
                     <ul>
                         <li><a href="https://www.facebook.com/dhananjezhian.dhananjezhian.3" target="/blank"><i class='bx bxl-facebook-circle'></i></a></li>
@@ -99,5 +109,11 @@
     </div>
     <!-- body_end -->
     <!-- program_end -->
+    <script>
+        let load = document.getElementById('load');
+        window.addEventListener('load',function(){
+            load.style.display = 'none'
+        })
+    </script>
 </body>
 </html>
