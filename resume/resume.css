@@ -111,7 +111,7 @@ input{
     align-items: center;
     justify-content: center;
     transform: scale(0.15);
-    background-color:  #98c3a9 ;
+    /* background-color:  #98c3a9 ; */
 }
 
 .one{
