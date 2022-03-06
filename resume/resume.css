@@ -23,6 +23,70 @@ input{
 #radio5:checked~.container #header .right ul #lie {
     background: rgb(225, 255, 255);
 }
+
+#radio6:checked~.container #header{
+    background-color: #333;
+    /* color: #fff; */
+}
+#radio6:checked~.container #header .left p{
+    color: rgb(224, 220, 220);
+}
+#radio6:checked~.container #header .right ul li:hover{
+    background-color: rgba(0, 0, 0, 0.4);   
+}
+#radio6:checked~.container #header .right ul>#lif{
+    color:rgb(224, 220, 220) ;
+}
+
+#radio6:checked~.container #header .right ul #lia{
+    filter: invert(1);
+}
+#radio6:checked~.container #header .right ul #lib{
+    filter: invert(1);
+}
+#radio6:checked~.container #header .right ul #lic{
+    filter: invert(1);
+}
+#radio6:checked~.container #header .right ul #lie{
+    filter: invert(1);
+}
+
+#radio6:checked~ .container .body .lef{
+    background-color: #222;
+}
+#radio6:checked~ .container .body .lef p{
+    color: rgb(224, 220, 220);
+}
+#radio6:checked~ .container .body .lef>ul{
+    background-color: #777;
+}
+#radio6:checked~ .container .body .lef>ul i{
+    color: rgb(224, 220, 220);
+}
+#radio6:checked~ .container .body .rig{
+    background-color: #222;
+    color:rgb(224, 220, 220) ;
+}
+#radio6:checked~ .container .body {
+    background-color: #333;
+}
+#radio6:checked~ .container #header {
+    background-color: #333;
+}
+
+
+
+#lif label>.bx{
+    font-size: 20px;
+    right: 5px;
+    transform: scale(1.5);
+}
+#lif{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 .container .wrap{
     position: absolute;
     width: 100%;
@@ -114,14 +178,15 @@ input{
     /* background-color:  #98c3a9 ; */
 }
 
+
 .one{
     width: 250px;
     height: 250px;
     position: absolute;
     /* background: coral; */
     border-radius: 50%;
-    border-top:20px solid black;
-    border-right:20px solid black;
+    border-top:20px solid rgb(0, 0, 0);
+    border-right:20px solid rgb(0, 0, 0);
     border-bottom:20px solid transparent;
     border-left:20px solid transparent;
     animation: ani1 3s linear infinite;
@@ -132,8 +197,8 @@ input{
     position: absolute;
     /* background: coral; */
     border-radius: 50%;
-    border-bottom:20px solid red;
-    border-left:20px solid red;
+    border-bottom:20px solid rgb(255, 255, 255);
+    border-left:20px solid rgb(255, 255, 255);
     border-top:20px solid transparent;
     border-right:20px solid transparent;
     animation: ani2 3s linear infinite;
@@ -145,8 +210,8 @@ input{
     position: absolute;
     /* background: coral; */
     border-radius: 50%;
-    border-top:20px solid black;
-    border-right:20px solid black;
+    border-top:20px solid rgb(0, 0, 0);
+    border-right:20px solid rgb(0, 0, 0);
     border-bottom:20px solid transparent;
     border-left:20px solid transparent;
      animation: ani1 3s linear infinite;
@@ -157,8 +222,8 @@ input{
     position: absolute;
     /* background: coral; */
     border-radius: 50%;
-    border-bottom:20px solid red;
-    border-left:20px solid red;
+    border-bottom:20px solid rgb(255, 255, 255);
+    border-left:20px solid rgb(255, 255, 255);
     border-top:20px solid transparent;
     border-right:20px solid transparent;
     animation: ani2 3s linear infinite;
@@ -169,8 +234,8 @@ input{
     position: absolute;
     /* background: coral; */
     border-radius: 50%;
-    border-top:20px solid black;
-    border-right:20px solid black;
+    border-top:20px solid rgb(0, 0, 0);
+    border-right:20px solid rgb(0, 0, 0);
     border-bottom:20px solid transparent;
     border-left:20px solid transparent;
      animation: ani1 3s linear infinite;
@@ -181,8 +246,8 @@ input{
     position: absolute;
     /* background: coral; */
     border-radius: 50%;
-    border-bottom:20px solid red;
-    border-left:20px solid red;
+    border-bottom:20px solid rgb(255, 255, 255);
+    border-left:20px solid rgb(255, 255, 255);
     border-top:20px solid transparent;
     border-right:20px solid transparent;
     animation: ani2 3s linear infinite;
@@ -193,8 +258,8 @@ input{
     position: absolute;
     /* background: coral; */
     border-radius: 50%;
-    border-top:20px solid black;
-    border-right:20px solid black;
+    border-top:20px solid rgb(0, 0, 0);
+    border-right:20px solid rgb(0, 0, 0);
     border-bottom:20px solid transparent;
     border-left:20px solid transparent;
     animation: ani1 3s linear infinite;
@@ -269,6 +334,7 @@ input{
     height: 100%;
     left: 100%;
     overflow: scroll;
+    white-space: normal;
     
 }
 #body .rig .cons>div:nth-child(2){

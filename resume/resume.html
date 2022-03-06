@@ -14,6 +14,7 @@
 	<input type="radio" name="radi" id="radio2">
 	<input type="radio" name="radi" id="radio3">
 	<input type="radio" name="radi" id="radio5">
+    <input type="checkbox" name="check" id="radio6">
 
     <!-- programm start-->
     <div class="container">
@@ -27,6 +28,7 @@
                         <label for="radio2"><li id="lib">education</li></label>
                         <label for="radio3"><li id="lic">skills</li></label>
                         <label for="radio5"><li id="lie">hobbies</li></label>
+                        <li id="lif"><label for="radio6" id="lab5"><i class='bx bxs-moon' onclick = change(); id="dark"></i></label></li>
                     </ul>
                 </div>
             </div>
@@ -119,6 +121,18 @@
         window.addEventListener('load',function(){
             load.style.display = 'none'
         })
+
+
+        
+        let name = document.getElementById('dark')
+        function change(){
+            if (name.className == 'bx bxs-moon'){
+                name.className = "bx bxs-sun"
+            }
+            else{
+                name.className = 'bx bxs-moon'
+            }
+        }
     </script>
 </body>
 </html>
