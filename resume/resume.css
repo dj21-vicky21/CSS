@@ -4,10 +4,12 @@
     box-sizing: border-box;
     text-decoration:none;
     transition: 0.5s all;
+    list-style: none;
 }
 input{
     display: none;
 }
+
 #radio1:checked~.container #header .right ul #lia {
     background: rgb(225, 255, 255);
 }
@@ -24,69 +26,42 @@ input{
     background: rgb(225, 255, 255);
 }
 
-#radio6:checked~.container #header{
-    background-color: #333;
-    /* color: #fff; */
-}
+
+
+
+
+
+
+
 #radio6:checked~.container #header .left p{
-    color: rgb(224, 220, 220);
-}
-#radio6:checked~.container #header .right ul li:hover{
-    background-color: rgba(0, 0, 0, 0.4);   
-}
-#radio6:checked~.container #header .right ul>#lif{
-    color:rgb(224, 220, 220) ;
+    color: #fff;
 }
 
-#radio6:checked~.container #header .right ul #lia{
-    filter: invert(1);
-}
-#radio6:checked~.container #header .right ul #lib{
-    filter: invert(1);
-}
-#radio6:checked~.container #header .right ul #lic{
-    filter: invert(1);
-}
-#radio6:checked~.container #header .right ul #lie{
-    filter: invert(1);
+#radio6:checked~.container #header .right ul>#lif{
+    color:rgb(0, 0, 0) ;
 }
 
 #radio6:checked~ .container .body .lef{
-    background-color: #222;
+    background-color: #333;
 }
 #radio6:checked~ .container .body .lef p{
-    color: rgb(224, 220, 220);
+    color: rgb(225, 225, 225);
 }
 #radio6:checked~ .container .body .lef>ul{
-    background-color: #777;
+    background-color: #222;
 }
 #radio6:checked~ .container .body .lef>ul i{
-    color: rgb(224, 220, 220);
+    color: rgb(255, 255, 255);
 }
-#radio6:checked~ .container .body .rig{
+#radio6:checked~ .container .body .rig .cons{
     background-color: #222;
     color:rgb(224, 220, 220) ;
 }
-#radio6:checked~ .container .body {
-    background-color: #333;
-}
 #radio6:checked~ .container #header {
-    background-color: #333;
+    background-color: #777;
 }
 
 
-
-#lif label>.bx{
-    font-size: 20px;
-    right: 5px;
-    transform: scale(1.5);
-}
-#lif{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
 .container .wrap{
     position: absolute;
     width: 100%;
@@ -113,13 +88,25 @@ input{
 #header .right{
     position: relative;
     width: 50%;
+    /* background-color: green; */
+}
+#header .right .bx{
+    font-size: 23px;
+    position: absolute;
+    display: flex;
+    list-style: none;
+    right: 5px;
+    top: 5%;
+    background-color: #fff;
+    border-radius: 10px;
 }
 #header .right>ul{
     position: absolute;
     display: flex;
     list-style: none;
-    right: 0;
+    right: 2.5%;
     top: 35%;
+    /* background-color: red; */
 }
 #header .right>ul li{
     margin-right: 15px;
@@ -319,7 +306,6 @@ input{
     position: relative;
     width: 60%;
     height: 100%;
-    background: rgb(0, 0, 0,0.09);
     display: flex;
 }
 #body .rig .cons{
@@ -327,6 +313,7 @@ input{
     position: relative;
     height: 90%;
     overflow: hidden;
+    background: rgba(0, 0, 0,0.09);
 }
 #body .rig .cons>div:nth-child(1){
     position: absolute;
@@ -335,7 +322,7 @@ input{
     left: 100%;
     overflow: scroll;
     white-space: normal;
-    
+    text-transform: uppercase;
 }
 #body .rig .cons>div:nth-child(2){
     position: absolute;
@@ -343,12 +330,14 @@ input{
     height: 100%;
     left: 100%;
     overflow: scroll;
+    text-transform: capitalize;
 }
 
 #body .rig .cons>div:nth-child(3){
     position: absolute;
     width: 100%;
     height: 100%;
+    text-transform: capitalize;
     left: 100%;
     
     
@@ -359,6 +348,7 @@ input{
     width: 100%;
     height: 100%;
     left: 100%;
+    text-transform: capitalize;
     
 }
 
@@ -458,7 +448,7 @@ input{
 
 
 
-@media  screen and (min-width:212px) and (max-width:630px){
+@media  screen and (min-width:212px) and (max-width:844px){
     *{
         margin: 0;
         padding: 0;
@@ -475,42 +465,57 @@ input{
    #header{
        display: inline-block;
        width: 100%;
-       height:180%;
+       height:130%;
        position: relative;
    }
     #header .left {
         width: 100%;
-        position: relative;
+        position: absolute;
         font-size: 20px;
+        margin: 0;
+        left: 0%;
+        right: 0%;
+        /* background-color: green; */
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 0px;
-        top: 15px;
+        top: 30px;
     }
     #header .right{
         width: 100%;
-        height: 60%;
-        position: relative;
+        height: 27%;
+        margin: 0%;
+        left: 0%;
+        right: 0%;
+        top:60px;
+        bottom: 0%;
         display: flex;
         align-items: center;
         justify-content: center;
-        top: -8px;
-        padding: 0 20px 0 20px ;
+        /* background-color: green; */
+        position: absolute;
     }
     #header .right ul{
-        position: relative;
-        width: 100%;
+        width: 90%;
+        text-align: center;
+        /* background-color: red; */
         display: flex;
+        position: relative;
+        top: 0px;
+        right: 0%;
+        left: 0%;
+        margin: 0%;
         align-items: center;
         justify-content: center;
-
+        text-align: center;
     }
+
     #body .rig .cons #education {
         line-height: 40px;
         overflow: scroll;
     }
     #body{
+        top:26.5px;
         width: 100%;
         height: 90%;
         position: relative;
@@ -536,22 +541,34 @@ input{
     }
     #body .lef ul{
         top:60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     #body .lef ul li{
         margin: 0px;
+
     }
     #body .rig{
         position: absolute;
         width: 100%;
-        height: 93%;
+        height: 100%;
         margin: 0px;
-        top: 294px;
+        top: 300px;
+        /* background-color: green; */
+        
     }
     #body .rig .cons{
         display: block;
         width: 100%;
+        height: 100%;
         position: relative;
         margin: 0;
+        /* background-color: #111; */
+        top: -16px;
+    }
+    #body .rig .cons>div:nth-child(1){
+        white-space: normal;
     }
     #body .rig .cons>div:nth-child(3) ul{
         display: grid;
