@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <input type="checkbox" name="dark-mode" id="darkmode-btn">
+    <div class="containers" id="containers">
+        <div class="header" id="header">
+            <div class="header-left" id="header-left">
+                <span class="header-left-name">DHANANJEZHIAN J</span>
+            </div>
+            <div class="header-right" id="header-right">
+                <div class="container">
+                    <div class="btn-group" id="btn-group">
+                        <a role="button" class="btn btn-primary" id='head-1' onmouseover="hover(this)" onmouseleave="nonhover1(this)" href="#about"><i class='bx bxs-home-alt-2'></i>&nbsp;About</a>
+                        <a role="button" class="btn btn-primary" id='head-2' onmouseover="hover(this)" onmouseleave="nonhover1(this)" href="#education"><i class='bx bxs-book'></i>&nbsp;Education</a>
+                        <a role="button" class="btn btn-primary" id='head-3' onmouseover="hover(this)" onmouseleave="nonhover1(this)" href="#skills"><i class='bx bxs-medal'></i>&nbsp;Skills & Hobbies</a>
+                        <a role="button" class="btn btn-primary" id='head-4' onmouseover="hover(this)" onmouseleave="nonhover1(this)" href="#achivements"><i class='bx bxs-bookmark-alt-plus' ></i>&nbsp;Achivements</a>
+                        <div class="btn-group">
+                            <a type="button" class="btn btn-primary dropdown-toggle"  id='head-5' onmouseover="hover(this)" onmouseleave="nonhover1(this)"  data-bs-toggle="dropdown"><i class='bx bxs-cog'></i>&nbsp;Settings</a>
+                            <div class="dropdown-menu" id="head-6">
+                                <label for="darkmode-btn" id="dark">
+                                    <a class="dropdown-item" id="dark2" onclick="dark_mode()" onmouseover="hover(this)" onmouseleave="nonhover1(this)"><i class='bx bxs-moon' id='dark-icon'></i> <span id="dark-text">Dark-Mode</span></a>
+                                </label>
+                                <a class="dropdown-item" id="dark4" onmouseover="hover(this)" onmouseleave="nonhover1(this)" target="_blank" href="#" ><i class='bx bxs-folder-open' ></i>&nbsp;Projects</a>
+                                <a class="dropdown-item" id="dark3" onmouseover="hover(this)" onmouseleave="nonhover1(this)" target="_blank" href="https://drive.google.com/file/d/1-e4PVwNfkv1jxh6BE4Di5WK5segH-72P/view?usp=sharing" download><i class='bx bxs-download'></i>&nbsp;Downlaod-resume</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="body" id="body">
+
+            <div class="body-left">
+                <div class="body-left-img">
+                    <img src="jh" alt="MY-IMAGE" id="img" class="body-img">
+                </div>
+                <h4 class="body-left-img-name" id="body-left-name">DHANANJEZHIAN J</h4>
+                <div class="body-left-share">
+                    <div class="btn-group-vertical">
+                        <a role="button" target="_blank" onmouseover="hover(this)" onmouseleave="nonhover2(this)" class="btn btn-primary text-capitalize" id='head-7' href="https://www.instagram.com/dj21_vicky21_/"><i class='bx bxl-instagram-alt'></i> Instagram</a>
+                        <a role="button" target="_blank" onmouseover="hover(this)" onmouseleave="nonhover2(this)" class="btn btn-primary text-capitalize" id='head-8' href="mailto:djvicky141@gmail.com"><i class='bx bxl-google'></i> G-mail</a>
+                        <a role="button" target="_blank" onmouseover="hover(this)" onmouseleave="nonhover2(this)" class="btn btn-primary text-capitalize" id='head-9' href="https://www.facebook.com/dhananjezhian.dhananjezhian.3"><i class='bx bxl-facebook-circle'></i> facebook</a>
+                        <a role="button" target="_blank" onmouseover="hover(this)" onmouseleave="nonhover2(this)" class="btn btn-primary text-capitalize" id='head-10' href="https://github.com/dj21-vicky21"><i class='bx bxl-github'></i> Github</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="body-right" id="body-right">
+                <div class="about" id="about">
+                    <h1>About:</h1>
+
+                </div>
+                <div class="education" id="education">
+                    <h1>Education:</h1>
+                    <p>
+                        <h5 id="heading5-1">10<sup>th</sup> (SSLC) <span>2016-2017</span></h5>
+                        <span>Karnataka Sangha hr sec school</span><br>
+                        <span>Percentage:  <b>84%</b></span>
+                    </p>
+                    <p>
+                        <h5 id="heading5-2">12<sup>th</sup> (HSC) <span>2018-2019</span></h5>
+                        <span>Karnataka Sangha hr sec school</span><br>
+                        <span>Percentage:  <b>58%</b></span>
+                    </p>
+                    <p>
+                        <h5 id="heading5-3">B.sc. computer science  <span>2019-2022</span></h5>
+                        <span>Dr.mgr Educational and Research Institute </span><br>
+                        <span>CURRENT CGPA:  <b>7.54</b></span>
+                    </p>
+                </div>
+                <div class="skills" id="skills">
+                    <h1>skills:</h1>
+                    <p class="first-in-S_H" id="first-in-S_H">
+                        <span><i class='bx bxl-html5' ></i>HTML-5</span>
+                        <span><i class='bx bxl-css3' ></i>CSS-3</span>
+                        <span><i class='bx bxl-javascript'></i>JAVA-SCRIPT</span>
+                        <span><i class='bx bxl-bootstrap'></i>BOOTSTRAP</span>
+                        <span><i class='bx bxl-python'></i>PYTHON</span>
+                    </p>
+                    <h1>Hobbies:</h1>
+                    <p class="first-in-S_H" id="first-in-S_H">
+                        <span> <b><i class='bx bxs-palette'></i> Drawing/craft</b><br>Painting and craft works</span>
+                        <span><b><i class='bx bxs-camera-movie' ></i> Watching movies</b><br>(Netflix series,Prime videos, <br> Youtube Videos)</span>
+                        <span> <b><i class='bx bxs-joystick' ></i> Games</b> <br> digital & non digital games</span>
+                        <span> <b><i class='bx bx-code-curly' ></i> Coding</b> <br> Html & python mini project </span>
+                       
+                    </p>
+                </div>
+                <div class="achivements" id="achivements">
+                    <h1>Achivements:</h1>
+                    <p>
+                        <h5 id="heading5-4">Crash Course On Python, <span>Google</span><span> Aug 2021</span></h5>
+                        <span> Grade received : <b> 97%</b></span>    
+                    </p>
+                    <p>
+                        <h5 id="heading5-5">Using Python to Interact with the Operating System,<span>Google</span><span> Sep 2021</span></h5>
+                        <span> Grade received : <b> 100%</b></span>    
+                    </p>
+                    <p>
+                        <h5 id="heading5-6">Introduction to Git and GitHub, <span>,Google</span><span> Oct 2021</span></h5>
+                        <span> Grade received : <b> 94.82%</b></span>    
+                    </p>
+                    <p>
+                        <h5 id="heading5-7">Introduction to HTML5, <span>University of Michigan</span><span> Sep 2021</span></h5>
+                        <span> Grade received : <b> 91.33%</b></span>    
+                    </p>
+                    <p>
+                        <h5 id="heading5-8">Introduction to CSS3,<span>University of Michigan</span><span> Oct 2021</span></h5>
+                        <span> Grade received : <b> 91.33%</b></span>    
+                    </p>
+                    <p>
+                        <h5 id="heading5-9">Interactivity with JavaScript, <span>University of Michigan</span><span> Dec 2021</span></h5>
+                        <span> Grade received : <b> 94.82%</b></span>    
+                    </p>
+                    <p>
+                        <h5 id="heading5-10">Front-End Web UI Frameworks and Tools: Bootstrap 4, <span>The Hong Kong University of Science and Technology</span><span> May 2022</span></h5>
+                        <span> Grade received : <b> 100%</b></span>    
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
