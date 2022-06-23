@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisor</title>
+    <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="left"><p>Normal Divisor</p>
+                <input type="text" name="number1" class="number1" id="number1" placeholder="Enter The Number">
+                <input type="submit"  value="submit" onclick="number1()" class="submit">
+            </div>
+            <div class="center"><p>Divisor using AND</p>
+                <input type="text" name="number2" class="number2" id="number2" placeholder="Enter The Number"> <span>&</span>
+                <input type="text" name="number3" class="number3" id="number3" placeholder="Enter The Number">
+                <input type="submit" value="submit" onclick="number2_3()" class="submit">
+            </div>
+            <div class="right"><p>Divisor using OR</p>
+                <input type="text" name="number4" class="number4" id="number4" placeholder="Enter The Number"> <span>|</span>
+                <input type="text" name="number5" class="number5" id="number5" placeholder="Enter The Number">
+                <input type="submit"  value="submit" onclick="number4_5()" class="submit">
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="left"><span id="span1"></span><p class="count" id="count1"></p></div>
+            <div class="center"><span id="span2"></span><p class="count" id="count2"></p></div>
+            <div class="right"><span id="span3"></span><p class="count" id="count3"></p></div>
+        </div>
+    </div>
+    <script src="task1.js"></script>
+</body>
+</html>
