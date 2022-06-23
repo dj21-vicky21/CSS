@@ -14,8 +14,8 @@ function number1(){
         start += 1
     }
     count1.innerHTML = 'count: '+count
-    if (output1.innerHTML == ''){
-        output1.innerHTML = ' Please Enter Number Only'
+    if (output1.innerHTML == '' ||  divisor1 > 100 ){
+        output1.innerHTML = 'Input must be a Number and  Number < 100'
     }
 
 }
@@ -37,9 +37,10 @@ function number2_3(){
         start += 1
     }
     count2.innerHTML = 'count: '+count
-    if (output2.innerHTML == ''){
-        output2.innerHTML = ' Please Enter Number Only'
+    if (output2.innerHTML == '' ||  divisor3 > 100 || divisor3 >100 ){
+        output2.innerHTML = 'Input must be a Number and  Number < 100'
     }
+    
     
 }
 
@@ -60,7 +61,7 @@ function number4_5(){
         start += 1
     } 
     count3.innerHTML = 'count: '+count
-    if (output3.innerHTML == ''){
-        output3.innerHTML = ' Please Enter Number Only'
+    if (output33.innerHTML == '' ||  divisor4 > 100  || divisor5 >100 ){
+        output3.innerHTML = 'Input must be a Number and  Number < 100'
     }
 }
