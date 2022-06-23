@@ -37,7 +37,7 @@ function number2_3(){
         start += 1
     }
     count2.innerHTML = 'count: '+count
-    if (output2.innerHTML == '' ||  divisor3 > 100 || divisor3 >100 ){
+    if (output2.innerHTML == '' ||  divisor2 > 100 || divisor3 >100 ){
         output2.innerHTML = 'Input must be a Number and  Number < 100'
     }
     
@@ -54,14 +54,14 @@ function number4_5(){
     let count3  = document.getElementById('count3')
     output3.innerHTML = " "
     while (start < end){
-        if (start%divisor4.value == 0 || start%divisor5.value == 0) {
+        if (start%divisor4.value == 0 && start%divisor5.value == 0) {
             output3.innerHTML += " "+start
             count +=1
         }
         start += 1
     } 
     count3.innerHTML = 'count: '+count
-    if (output33.innerHTML == '' ||  divisor4 > 100  || divisor5 >100 ){
+    if (output3.innerHTML == '' ||  divisor4 > 100  || divisor5 > 100 ){
         output3.innerHTML = 'Input must be a Number and  Number < 100'
     }
 }
