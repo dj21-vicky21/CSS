@@ -15,79 +15,79 @@ body,html{
     justify-content: center;
     align-items: center;
 }
-.one{
+.loading1{
     position: absolute;
     width: 250px;
     height: 250px;
     border-top: 15px solid #111;
     border-right: 15px solid #111;
     border-radius: 50%;
-    animation: ani1 3s linear infinite;
+    animation: loading_animation_1 3s linear infinite;
 }
-.two{
+.loading2{
     position: absolute;
     width: 220px;
     height: 220px;
     border-bottom: 15px solid #fff;
     border-left: 15px solid #fff;
     border-radius: 50%;
-    animation: ani2 3s linear infinite;
+    animation: loading_animation_2 3s linear infinite;
 }
-.three{
+.loading3{
     position: absolute;
     width: 190px;
     height: 190px;
     border-top: 15px solid #111;
     border-right: 15px solid #111;
     border-radius: 50%;
-    animation: ani1 3s linear infinite;
+    animation: loading_animation_1 3s linear infinite;
 }
-.four{
+.loading4{
     position: absolute;
     width: 160px;
     height: 160px;
     border-bottom: 15px solid #fff;
     border-left: 15px solid #fff;
     border-radius: 50%;
-    animation: ani2 3s linear infinite;
+    animation: loading_animation_2 3s linear infinite;
 }
-.five{
+.loading5{
     position: absolute;
     width: 130px;
     height: 130px;
     border-top: 15px solid #111;
     border-right: 15px solid #111;
     border-radius: 50%;
-    animation: ani1 3s linear infinite;
+    animation: loading_animation_1 3s linear infinite;
 }
-.six{
+.loading6{
     position: absolute;
     width: 100px;
     height: 100px;
     border-bottom: 15px solid #fff;
     border-left: 15px solid #fff;
     border-radius: 50%;
-    animation: ani2 3s linear infinite;
+    animation: loading_animation_2 3s linear infinite;
 }
-.seven{
+.loading7{
     position: absolute;
     width: 70px;
     height: 70px;
     border-top: 15px solid #111;
     border-right: 15px solid #111;
     border-radius: 50%;
-    animation: ani1 3s linear infinite;
+    animation: loading_animation_1 3s linear infinite;
 }
-.eight{
+.loading8{
     position: absolute;
     width: 40px;
     height: 40px;
     background: #fff;
     border-radius: 50%;
-    animation: ani2 3s linear infinite;
+    animation: loading_animation_2 3s linear infinite;
 }
 
-@keyframes ani1{
+@keyframes loading_animation_1{
     0%{
         transform: rotate(0deg);
     }
@@ -95,7 +95,7 @@ body,html{
         transform: rotate(360deg);
     }
 }
-@keyframes ani2{
+@keyframes loading_animation_2{
     0%{
         transform: rotate(0deg);
     }
