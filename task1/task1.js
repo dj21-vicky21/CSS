@@ -54,7 +54,7 @@ function number4_5(){
     let count3  = document.getElementById('count3')
     output3.innerHTML = " "
     while (start < end){
-        if (start%divisor4.value == 0 && start%divisor5.value == 0) {
+        if (start%divisor4.value == 0 || start%divisor5.value == 0) {
             output3.innerHTML += " "+start
             count +=1
         }
