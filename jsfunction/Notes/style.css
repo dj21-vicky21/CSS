@@ -136,13 +136,37 @@ abbr{
 
 @media only screen and (max-width:900px){
     .container-fluid div.containers{
-        max-width: 90%;
+        max-width: 95%;
         position: absolute;
-        background-color: red;
+        /* background-color: red; */
     }
     .container-fluid >p{
         position: relative;
         top: -300px;
+        /* text-align: center; */
+    }
+
+}
+@media only screen and (max-width:450px){
+    .container-fluid div.containers{
+        max-width: 90%;
+    }
+    .container-fluid >p{
+        text-align: center;
+    }
+    .container-fluid div.containers .header p{
+        left: -35%;
+    } 
+    .container-fluid div.containers .header abbr{
+        right: 10%;
+        position: relative;
+    }
+    .container-fluid div.containers .footer p{
+        left: -35%;
+    }
+    .container-fluid div.containers .footer abbr{
+        right: 12%;
+        position: relative;
     }
 
 }
