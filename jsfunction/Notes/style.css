@@ -1,0 +1,148 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    position: absolute;
+    background-color: #bdd4e7;
+    background-image: linear-gradient(315deg, #bdd4e7 100%, #8693ab 99%);
+}
+.container-fluid abbr>.btn{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}
+.container-fluid abbr>button.btn:active,.container-fluid abbr>button.btn:focus{
+    box-shadow: none;
+}
+.container-fluid div.containers{
+    width: 450px;
+    /* height: auto; */
+    max-height: 80%;
+    position: relative;
+    /* top: -2rem; */
+    /* overflow: hidden; */
+    background-color: #b3cdd1;
+    background-image: linear-gradient(180deg, #b3cdd1 0%, #9fa4c4 74%);
+    box-shadow:  0 3px 10px rgba(0 ,0 ,0 ,0.5);
+}
+.container-fluid div.containers .header{
+    height: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+}
+textarea{
+    max-height:130px;
+}
+i{
+    cursor: pointer;
+}
+.container-fluid div.containers .body{
+    width: 100%;
+    position: relative;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    border-right: 1px solid transparent;
+    background-color: transparent;
+    min-height: 40px;
+    outline: none;
+    word-wrap: break-word;
+    scroll-behavior: smooth;
+    padding:2% 3%;
+}
+textarea::-webkit-scrollbar {
+    display: none;
+  }
+.container-fluid div.containers .footer{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #666;
+}
+.container-fluid div.containers .header p{
+    position: relative;
+    left: -10rem;
+    top: 0.5rem;
+}
+.header abbr:nth-of-type(1){
+    padding: 0 3%;
+}
+.container-fluid div.containers .header abbr> i{
+    position: relative;
+    top: 0rem;
+    right: -10rem;
+    border-radius: 5px;
+}
+.container-fluid div.containers .footer p{
+    position: relative;
+    top: 0.5rem;
+    left: -10.5rem;
+    font-size: 0.8rem;
+
+}
+abbr{
+    border-bottom: none !important;
+    cursor: inherit !important;
+    text-decoration: none !important;
+  }
+.container-fluid div.containers .footer i{
+    position: relative;
+    right: -170px;
+    cursor: pointer;
+}
+#containers2{
+    overflow: scroll;
+}
+.container-fluid .containers #containers2{
+    overflow: scroll;
+    max-height: 400px;
+}
+.container-fluid div.containers #containers2 > p{
+    display: none;
+}
+.container-fluid div.containers #containers2  div{
+    position: relative;
+    word-wrap: break-word;
+    padding: 2% 2%;
+    opacity: 0.8;
+    margin: 0;
+    box-shadow: 0 1px rgba(0 ,0 ,0 ,0.5);
+}
+
+
+.container-fluid > p{
+    position: relative;
+    /* top:280px; */
+    text-transform: capitalize;
+    opacity: 0.4;
+    padding: 0 1%;
+}
+/* .container-fluid > p:nth-of-type(2){
+    top: 300px;
+} */
+
+
+@media only screen and (max-width:900px){
+    .container-fluid div.containers{
+        max-width: 90%;
+        position: absolute;
+        background-color: red;
+    }
+    .container-fluid >p{
+        position: relative;
+        top: -300px;
+    }
+
+}
