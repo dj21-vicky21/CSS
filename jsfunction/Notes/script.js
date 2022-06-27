@@ -2,7 +2,9 @@ let ad =  document.getElementById("add");
 let body = document.getElementById("body");
 let count = 0
 
-notes =[]
+
+
+let notes =[]
 
 function display(){
     let note_count =document.querySelector('.note_count')

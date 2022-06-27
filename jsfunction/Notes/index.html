@@ -19,14 +19,14 @@
 <body>
     <div class="container-fluid">
         <abbr title="Add note"><button class="btn btn-primary" id="add" onclick="display()" ><span><i class="fa-solid fa-plus"></i></span></button></abbr>
-        <p class="discribe">left click to strick the note</p>
+        <p class="discribe" id="discribe1">left click (tap) to strick the note</p>
         <div class="containers" id="containers">
             <div class="header"><p class="name">NOTE</p><abbr title="Save All The Notes"><i class="fa-solid fa-floppy-disk" onclick="saveFile()"></i></abbr><abbr title="Delect The Current Note"><i class="fa-solid fa-trash-can" onclick="del()"></i></abbr></div>
             <textarea class="body" id="body" placeholder="Note here"></textarea>
-            <div class="footer"><p class="note">NOTES NO: <span  class="note_count">1</span></p><abbr title="Delete All The Notes"><i class="fa-solid fa-trash" onclick="notedelall()"></i></abbr></div>
+            <div class="footer"><p class="note">NOTES NO: <span  class="note_count">0</span></p><abbr title="Delete All The Notes"><i class="fa-solid fa-trash" onclick="notedelall()"></i></abbr></div>
             <div class="containers2" id="containers2" style="overflow: scroll;"><p id="p"></p></div>
         </div>
-        <p class="discribe">right click to remove the note</p>
+        <p class="discribe" id="discribe2">right click (hold) to remove the note</p>
     </div>
 </body>
 </html>
