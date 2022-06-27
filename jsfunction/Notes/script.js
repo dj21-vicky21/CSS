@@ -1,6 +1,6 @@
 let ad =  document.getElementById("add");
 let body = document.getElementById("body");
-let count = 1
+let count = 0
 
 notes =[]
 
@@ -61,7 +61,7 @@ function notedelall(){
     const createbody = document.createElement('p')
     con.appendChild(createbody)
     createbody.setAttribute('id','p')
-    count = 1
+    count = 0
     note_count.innerText = count
 }
 function saveFile(){
