@@ -49,8 +49,12 @@ function dismiss(self){
 
 }
 function dec(self){
-    self.style.textDecoration = 'line-through'
-
+    if(self.style.textDecoration == "line-through"){
+        self.style.textDecoration = 'none'
+    }
+    else{
+        self.style.textDecoration = 'line-through'
+    }
 }
 function notedelall(){
     notes.splice(0,notes.length)
