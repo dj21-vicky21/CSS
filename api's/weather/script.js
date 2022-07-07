@@ -15,7 +15,7 @@ function check(){
     var country = data.sys.country
 
     $('.icon').attr('src',icon);
-    $('.location').text(location)
+    $('.location').html(location)
     $('.country').html(country)
     $('.weather').html(weather);
     $('.temp').html(temp);
@@ -52,7 +52,13 @@ function getLocation() {
     var weather  =  data.current.weather[0].main
     $('.weather').html(weather);
     
-  
+    var location = data.name
+    var country = data.timezone
+
+    $('.location').html(location)
+    $('.country').html(country)
+    
+
 
 
     // $('.icon').attr('src',icon);
