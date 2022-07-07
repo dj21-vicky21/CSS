@@ -93,11 +93,11 @@ function getLocation() {
     var weather  =  data.current.weather[0].main
     $('.weather').html(weather);
     
-    var location = data.name
-    var country = data.timezone
+   
+    var location = "TimeZone: " +data.timezone
 
+   
     $('.location').html(location)
-    $('.country').html(country)
     
 
 
