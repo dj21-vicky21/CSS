@@ -6,17 +6,17 @@ function check(){
 
     var icon = "https://openweathermap.org/img/w/" + data.weather[0].icon +".png";
 
-    var temp = "Temp: " +Math.floor(data.main.temp);
+    var temp = Math.floor((data.main.temp-32)*.5556)+"°C";
 
-    var weather  =  "Weather: "+data.weather[0].main
+    var weather  = data.weather[0].main
     
-    var location = "City: "+data.name
+    var location = data.name+"-"
     
-    var country = "Country: "+data.sys.country
+    var country = data.sys.country
 
     $('.icon').attr('src',icon);
+    $('.location').text(location)
     $('.country').html(country)
-    $('.location').html(location)
     $('.weather').html(weather);
     $('.temp').html(temp);
 
@@ -44,17 +44,30 @@ function getLocation() {
     console.log(data)
 
     var icon = "https://openweathermap.org/img/w/" + data.current.weather[0].icon+".png";
-
-    var temp = "Temp: " +Math.floor((data.current.temp-32)*.5556) +"°C";
-
-    var weather  =  "Weather: "+data.current.weather[0].main
-    
-    
-
-
     $('.icon').attr('src',icon);
+    
+    var temp = Math.floor((data.current.temp-32)*.5556) +"°C";
     $('.temp').html(temp);
+    
+    var weather  =  data.current.weather[0].main
     $('.weather').html(weather);
+    
+    var location = data.name+"-"
+    $('.location').html(location)
+    
+    var country = data.sys.country
+    if(country === undefined){
+      country == "-" 
+    }
+    $('.country').html(country)
+    
+
+
+
+    // $('.icon').attr('src',icon);
+    // $('.weather').html(weather);
+    // $('.temp').html(temp);
+
     
 
 

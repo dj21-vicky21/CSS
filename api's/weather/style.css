@@ -85,8 +85,13 @@ body{
     font-size: 0.9rem;
     text-transform: capitalize;
     border-radius:5px;
+    border: 0px;
+    background-color: transparent;
+    box-shadow: 0 5px 10px 1px rgba(0,0,0,0.6);
 }
-
+.btn:active{
+    transform: scale(0.9);
+}
 .btn1{
     left: 30px;
 }
@@ -106,6 +111,32 @@ body{
 
 .icon{
     position: absolute;
-    top: 150px;
+    top: 10rem;
     left: 30px;
+}
+
+.weather{
+    position: absolute;
+    font-size: 1.5rem;
+    top:10.5rem;
+    left: 5.5rem;
+}
+
+.temp{
+    position: absolute;
+    font-size: 4.5rem;
+    top: 13.5rem;
+    left: 2rem;
+}
+.location{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 19.8rem;
+    left: 2rem;
+}
+.country{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 19.8rem;
+    left:9rem;
 }
