@@ -52,16 +52,7 @@ function getLocation() {
     var weather  =  data.current.weather[0].main
     $('.weather').html(weather);
     
-    var location = data.name+"-"
-    $('.location').html(location)
-    
-    var country = data.sys.country
-    if(country === undefined){
-      country == "-" 
-    }
-    $('.country').html(country)
-    
-
+  
 
 
     // $('.icon').attr('src',icon);
