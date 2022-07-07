@@ -12,15 +12,21 @@
 <body>
     <div class="weather-container">
 
-
-        <input type="text" id="input"> <button onclick="check()">check-weather</button>
-         <button onclick="getLocation()">current location</button><br> 
-        <img class="icon" alt="">
-        <p class="country"></p>
-        <p class="location"></p>
-        <p class="weather" id="weather"></p>
-
-        <p class="temp"></p>
+        <div class="header">
+            <div class="form">
+                <input type="text" id="input"  placeholder=" " class="form__input" autocomplete="off">
+                <label for="email" class="form__label">Enter City</label>
+            </div>
+            <button onclick="check()" class="btn btn1">check-weather</button>
+            <button onclick="getLocation()" class="btn btn2">current location</button><br>          
+        </div>
+        <div class="body">
+        <p class="error"></p>
+        <img class="icon" alt=""src="https://openweathermap.org/img/w/11d.png">
+        <p class="weather" id="weather">Clouds</p>
+        <p class="temp">99</p>
+        <p class="location">Chennai</p><p class="country">IN</p>
+        </div>
     </div>
 </body>
 </html>
