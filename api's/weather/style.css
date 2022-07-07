@@ -41,6 +41,9 @@ body{
                 height: 100%;
                 border: 0px solid transparent;
                 padding: 4%;
+                height: 30px;
+                background: #fff;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.3);
             }
             .form__label{
                 position: absolute;
@@ -50,7 +53,7 @@ body{
                 color: #111;
                 cursor: text;
                 transition: all 0.3s;
-            
+
             }
             
             .form__input:focus{
@@ -89,55 +92,58 @@ body{
     border: 0px;
     background-color: transparent;
     box-shadow: 0 1px 5px rgba(0,0,0,0.6);
+    left:7rem;
 }
 .btn:active{
     transform: scale(0.9);
 }
-.btn1{
-    left: 30px;
-}
-.btn2{
-    right: 30px;
-}
+
 .body{
     width: 100%;
     height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
 }
 .error{
     width: 100%;
     height: 12.5%;
-    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    bottom: 0rem;
+    position: absolute;
 }
 /* icon */
-
 .icon{
     position: absolute;
-    top: 10rem;
-    left: 30px;
+    top: 7rem;
+    left: 4rem;
 }
-
 .weather{
     position: absolute;
+    top: 7.8rem;
+    left: 7.7rem;
     font-size: 1.5rem;
-    top:10.5rem;
-    left: 5.5rem;
 }
-
 .temp{
     position: absolute;
-    font-size: 4.5rem;
-    top: 13.5rem;
-    left: 2rem;
+    font-size: 3rem;
+    top:10rem ;
+    left: 4.4rem;
 }
 .location{
     position: absolute;
     font-size: 1.5rem;
-    top: 19.8rem;
-    left: 2rem;
+    left: 4.4rem;
 }
 .country{
     position: absolute;
     font-size: 1.5rem;
-    top: 19.8rem;
-    left:9rem;
+    left: 11.3rem;
+    top: 14.8rem;
 }
+
+
