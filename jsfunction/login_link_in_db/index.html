@@ -16,26 +16,55 @@
 <body>
     <div class="container-fluid">
         <div class="container">
-            <div class="loginpage">
+            <div class="loginpage" >
                 <h2>login</h2>
-                <div class="inputtab">
-                    <label for="username" class="labels label1">Username</label>
-                    <input type="text" name="username" id="username" class="username">
-                    <label for="password" class="labels label2">Password</label>
-                    <input type="password" name="password" id="password" class="password">
+                <div class="inputtab" >
+                    <div class="form">
+                        <input type="text" id="input1"  placeholder=" " class="form__input" autocomplete="off">
+                        <label for="input1" class="form__label">Username</label>
+                    </div>
+                    <div class="form">
+                        <input type="password" id="input2"  placeholder=" " class="form__input" autocomplete="off">
+                        <label for="input2" class="form__label">Password</label>
+                    </div>
                 </div>
                 <div class="btntab">
-                    <button type="button" class="button signupbtn">
+                    <button type="button" class="btn signupbtn" id="signupbtn" onclick="signup()">
                         Signup
                     </button>
-                    <button type="button" class="button loginbtn">
+                    <button type="button" class="btn loginbtn" id="loginbtn">
                         Login
                     </button>
                 </div>
-                <div class="errormsgtab"></div>
+                <div class="errormsgtab err1"></div>
             </div>
-            <div class="signuppage"></div>
+            <div class="signuppage">
+                <h2>Sign up</h2>
+                <div class="inputtab">
+                    <div class="form">
+                        <input type="text" id="input3"  placeholder=" " class="form__input" autocomplete="off">
+                        <label for="input3" class="form__label">Username</label>
+                    </div>
+                    <div class="form">
+                        <input type="password" id="input4"  placeholder=" " class="form__input" autocomplete="off">
+                        <label for="input4" class="form__label">Password</label>
+                    </div>
+                    <div class="form">
+                        <input type="password" id="input5"  placeholder=" " class="form__input" autocomplete="off">
+                        <label for="input5" class="form__label">Confirm Password</label>
+                    </div>
+                </div>
+                <div class="btntab">
+                    <button type="button" class="btn loginbtn">
+                        Create
+                    </button>
+                </div>
+                <div class="errormsgtab err2"></div>
+            </div>
         </div>
     </div>
 </body>
 </html>
+
+
+

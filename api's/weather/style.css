@@ -64,7 +64,6 @@ body{
                 font-size: 0.8rem;
             }
             .form__input:focus ~ .form__label,.form__input:not(:placeholder-shown).form__input:not(:focus)~.form__label{
-
                 border-radius: 5px;
             }
             .form__input:focus ~ .form__label,.form__input:not(:placeholder-shown) ~.form__label{
