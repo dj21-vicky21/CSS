@@ -1,0 +1,102 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background:url('https://dj21-vicky21.github.io/Html-Css/sources/fish_design.jpg');
+    
+}
+
+form{
+   
+    position: relative;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.561);
+    height: 350px;
+    filter: blur(5);
+    border-radius: 10px;
+    padding: 5%;
+    /* display: none; */
+    margin: 0%;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.5);
+}
+input{
+    box-shadow:  0 1px 8px rgba(0,0 ,0,0.4);
+}
+textarea{
+    box-shadow:  0 1px 8px rgba(0,0 ,0,0.4);
+}
+.thank{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    font-weight: bold;
+}
+h2{
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.name{
+    position: relative;
+    top: 5%;
+}
+label{
+    position: relative;
+    top: -8px;
+}
+#name{
+    width: 100%;
+    height: 30px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    padding: 2%;
+}
+
+.email{
+    position: relative;
+    top: 10%;
+}
+
+#email{
+    width: 100%;
+    height: 30px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    padding: 2%;
+}
+.message{
+    position: relative;
+    top: 15%;
+    height: 30%;
+    /* background-color: green; */
+}
+#message{
+    width: 100%;
+    height: 80%;
+    resize: none;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    padding: 2%;
+    
+}
+
+.submit{
+    position: relative;
+    top: 20%;
+    width: 100%;
+    height: 30px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>message box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="https://sheetdb.io/api/v1/m3kio5oruf1iw" method="post" id="sheetform">
+        <h2>contact me</h2>
+        <div class="name">
+            <label for="name">Name : </label>
+        <input type="text" name="data[Username]" id="name" autocomplete="off" placeholder="Enter your Name" required>
+        </div>
+        <div class="email">
+            <label for="email">Email : </label>
+            <br>
+        <input type="email" name="data[email]" id="email" autocomplete="off" placeholder="Enter your email" required>
+        </div>
+        <div class="message">
+            <label for="message">Message : </label>
+            <br>
+        <textarea name="data[message]"  id="message"   required placeholder="text here"> </textarea>
+        </div>
+        <input type="submit" value="Send" class="submit ">
+    </form>
+    <script>
+        let form = document.getElementById('sheetform') 
+        form.addEventListener('submit',e =>{
+            e.preventDefault()
+            fetch(form.action,{method:"POST",body:new FormData(form)})
+            .then(response => {
+                var restname  = document.getElementById('name')
+                var restemail  = document.getElementById('email')
+                var restmessage  = document.getElementById('message')
+                var thank  = document.getElementById('sheetform')
+                restname.value = '' 
+                restemail.value = '' 
+                restmessage.value = ''
+                thank.innerHTML = `
+                <div class="thank">Thank for your Interest</div>
+                ` 
+            }
+            )
+            .catch(error => console.error('Error',error.message))
+        })
+    </script>
+</body>
+</html>
