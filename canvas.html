@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html>
+<body onload="draw()">
+
+<!-- 
+<canvas id="myCanvas" width="200" height="100"
+style="border:5px double #bb342b;">
+</canvas> -->
+<canvas id="element1" width="220" height="220" style="border:5px solid red ;"></canvas>
+<canvas id="element2" width="220" height="220" style="border:5px solid red ;"></canvas>
+<canvas id="element3" width="220" height="220" style="border:5px solid red ;"></canvas>
+<canvas id="element4" width="220" height="220" style="border:5px solid red ;"></canvas>
+
+<script>
+    function draw(){
+        let canvas1 = document.getElementById('element1')
+        if(canvas1.getContext){
+            const ctx = canvas1.getContext('2d')
+            // first  square
+            ctx.fillStyle = 'rgb(0, 0, 0)';
+            ctx.fillRect(30, 30, 100, 100);
+            ctx.clearRect(30, 30, 100, 100);
+            ctx.strokeRect(30,30,110,110);
+            
+            
+            // second  square
+            ctx.fillStyle = 'rgb(0, 0, 0)';
+            ctx.fillRect(70, 70, 100, 100);
+            ctx.clearRect(70, 70, 100, 100);
+            ctx.strokeRect(70,70,110,110);
+
+            // first line
+            ctx.moveTo(30,30);
+            ctx.lineTo(70,70);
+            ctx.stroke();
+            ctx.fill()
+
+            // second line
+            ctx.moveTo(30,140);
+            ctx.lineTo(70,180);
+            ctx.stroke();
+            ctx.fill();
+            
+            // third line
+            ctx.moveTo(140,30);
+            ctx.lineTo(180,70);
+            ctx.stroke();
+            ctx.fill();
+
+            // fourth line
+            ctx.moveTo(140,70);
+            ctx.lineTo(140,140);
+            ctx.stroke();
+            ctx.fill();
+
+            // fifth line
+            ctx.moveTo(70,140);
+            ctx.lineTo(140,140)
+            ctx.stroke();
+            ctx.fill()
+
+            // sixth line
+            ctx.moveTo(140,140);
+            ctx.lineTo(180,180)
+            ctx.stroke();
+            ctx.fill()
+
+
+        }
+        }
+        let canvas2 = document.getElementById('element2')
+        if(canvas2.getContext){
+            const ctx = canvas2.getContext('2d');
+
+           
+                ctx.beginPath();
+	        ctx.arc(110, 110, 90,0, Math.PI*2);
+            ctx.shadowBlur = 2;
+            ctx.shadowColor = "red";
+            ctx.stroke()
+            
+            // ctx.fill(); 
+            
+            ctx.moveTo(80, 90);
+	        ctx.arc(70,90,10,0,Math.PI*2);
+            ctx.fillStyle = "yellow";
+            ctx.fill()
+            
+            ctx.moveTo(150,90)
+	        ctx.arc(140,90,10,0,Math.PI*2);
+            
+            ctx.moveTo(170,110)
+	        ctx.arc(110,110,60,0,Math.PI);
+            ctx.stroke(); 
+ 
+        }
+        let canvas3 = document.getElementById('element3')
+        if(canvas3.getContext){
+            const ctx = canvas3.getContext('2d');
+
+            ctx.font = '30px arial'
+            ctx.strokeText("HELLO WORLD",0,110);
+            ctx.fillStyle = "red"
+            ctx.fill();
+        }
+
+        let canvas4 = document.getElementById('element4')
+        if(canvas4.getContext){
+            const ctx = canvas4.getContext('2d');
+
+            ctx.moveTo(30,30)
+            ctx.lineTo(160,30)
+
+            ctx.moveTo(160,30)
+            ctx.lineTo(30,160)
+            
+            ctx.moveTo(30,160)
+            ctx.lineTo(30,30)
+
+            ctx.stroke()
+            ctx.fill()
+
+            ctx.moveTo(160,35)
+            ctx.lineTo(35,160)
+
+            ctx.moveTo(35,160)
+            ctx.lineTo(160,160)
+
+            ctx.moveTo(160,160)
+            ctx.lineTo(160,35)
+
+
+
+            ctx.stroke()
+            ctx.fill()
+            
+        }
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
