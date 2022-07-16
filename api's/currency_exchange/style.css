@@ -9,7 +9,7 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: url('source/currency.png');
+    background-image: url('https://dj21-vicky21.github.io/Html-Css/api\'s/currency_exchange/source/currency.png');
 }
 
 
@@ -19,7 +19,7 @@ body{
     border: 2px solid #4193a9;
     border-radius: 5px;
     box-shadow: 0 5px 20px 10px #d2c2d1;
-    background-image: url('source/currency2.png');
+    background-image: url('https://dj21-vicky21.github.io/Html-Css/api\'s/currency_exchange/source/currency2.png');
 }
 h2{
     text-align: center;
