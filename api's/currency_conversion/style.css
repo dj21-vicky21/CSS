@@ -1,0 +1,146 @@
+*,*::before,*::after{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh; */
+}
+
+
+.container{
+    /* display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around; */
+    width: 350px;
+    height: 400px;
+    background-color: #cdd1e4;
+    border: 2px solid #4193a9;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px 10px #d2c2d1; 
+
+}
+h2{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 130;
+    padding: 5% 0;
+    color: #4193a9;
+}
+
+span{
+    text-align: center;
+    /* background-color: green; */
+}
+i{
+    width: 100%;
+    font-size: 3rem;
+    /* background-color: red; */
+    text-align: center;
+    padding: 5% 0 ;
+    color: #4193a9;
+}
+/* 
+
+select,option{
+    position: relative;
+    width: 100%;
+    padding: 5% 0;
+    text-align: center;
+    outline: none;
+    border: 0;
+    color: #4193a9;
+    
+}  */
+
+
+
+
+input{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    outline: none;
+    border: 0;
+    top: 10px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+
+
+select {
+
+    /* styling */
+    width: 100%;
+    background-color: white;
+    /* border: thin solid blue; */
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+  
+    /* reset */
+  
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 0;
+  }
+  select>option{
+    text-transform: uppercase;
+  }
+  
+  
+  /* arrows */
+  
+  select.select {
+    background-image:
+      linear-gradient(45deg, transparent 50%, blue 50%),
+      linear-gradient(135deg, blue 50%, transparent 50%),
+      linear-gradient(to right, skyblue, skyblue);
+    background-position:
+      calc(100% - 20px) calc(1em + 2px),
+      calc(100% - 15px) calc(1em + 2px),
+      100% 0;
+    background-size:
+      5px 5px,
+      5px 5px,
+      2.5em 2.5em;
+    background-repeat: no-repeat;
+  }
+  
+  select.select:focus {
+    background-image:
+      linear-gradient(45deg, white 50%, transparent 50%),
+      linear-gradient(135deg, transparent 50%, white 50%),
+      linear-gradient(to right, gray, gray);
+    background-position:
+      calc(100% - 15px) 1em,
+      calc(100% - 20px) 1em,
+      100% 0;
+    background-size:
+      5px 5px,
+      5px 5px,
+      2.5em 2.5em;
+    background-repeat: no-repeat;
+    border-color: #4193a9;
+    outline: 0;
+  }
+  
