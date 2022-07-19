@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Filter</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js" integrity="sha512-JjFeUD2H//RHt+DjVf1BTuy1X5ZPtMl0svQ3RopX641DWoSilJ89LsFGq4Sw/6BSBfULqUW/CfnVopV5CfvRXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body onload = "demo()">
+    <h1>Image Filter App</h1>
+    Select Image: <input type="file" name="img_file" id="upload_file">
+    <canvas id="canvas"></canvas>
+    <div class="filter-btns">
+        <h2>Filters</h2>
+        <h3>Brightness</h3>
+        <button id="increaseA" class="filter-btn increase_Brightness">increase +</button>
+        <button id="decreaseA" class="filter-btn decrease_Brightness">decrease -</button>
+        <h3>contrast</h3>
+        <button id="increaseB" class="filter-btn increase_contrast">increase +</button>
+        <button id="decreaseB" class="filter-btn decrease_contrast">decrease -</button>
+        <h3>saturation</h3>
+        <button id="increaseC" class="filter-btn increase_saturation">increase +</button>
+        <button id="decreaseC" class="filter-btn decrease_saturation">decrease -</button>
+    </div>
+    <hr>
+    <div class="Effects">
+        <h1>Effects</h1>
+        <button class="filter-btn vintage">vintage</button>
+        <button class="filter-btn lomo">lomo</button>
+        <button class="filter-btn clarity">clarity</button>
+        <button class="filter-btn sincity">sincity</button>
+    </div>
+    <hr>
+    <button class="remove_filter" id="remove_filter"> Remove Filter</button>
+</body>
+</html>

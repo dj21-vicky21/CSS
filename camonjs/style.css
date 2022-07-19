@@ -1,0 +1,19 @@
+*,::before,::after{
+    margin: 1%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+button{
+    text-transform: capitalize;
+    padding: 1%;
+    margin: 2%;
+    width: 100px;
+}
+
+#canvas{
+    background-color: #888;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
