@@ -1,7 +1,9 @@
+import {sayHi} from './key.js'
 
-const key = "2e2a5a2aba2c61c858b4191046400d7b"
 
-function Check(){
+const key = sayHi()
+let btn = document.querySelector('.btn')
+btn.addEventListener('click',()=>{
   var icon = "https://openweathermap.org/img/w/50d.png";
   var temp = "0°C";
   var weather  = ""
@@ -40,5 +42,5 @@ function Check(){
 });
 }
 
-
+)
 

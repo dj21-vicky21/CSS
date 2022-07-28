@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather-app</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="body">
@@ -15,9 +15,9 @@
         <div class="header">
             <div class="form">
                 <input type="text" id="input"  placeholder=" " class="form__input" autocomplete="off">
-                <label for="email" class="form__label">Enter City</label>
+                <label for="input" class="form__label">Enter City</label>
             </div>
-            <button onclick="Check()" class="btn">check-weather</button>
+            <button class="btn">check-weather</button>
         </div>
         <div class="body">
         <p class="error"></p>
