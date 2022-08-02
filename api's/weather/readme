@@ -1,0 +1,18 @@
+get your api key 
+
+create key.js
+
+inside of  key.js
+
+example:
+
+const key = 'YOUR_API_KEY'
+export {key}
+
+or 
+
+const key ='YOUR_API_KEY
+export function sayHi() {
+    return num
+  }
+
