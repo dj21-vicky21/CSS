@@ -72,10 +72,6 @@ span i{
 }
 
 
-p{
-    display: none;
-    z-index: -1;
-}
 /* lines */
 
 
@@ -87,6 +83,7 @@ p.col-1{
     margin-top: 13px;
     background-color: #111;
     position: absolute;
+    display:none;
 }
 p.col-2{
     width: 10px;
@@ -96,6 +93,7 @@ p.col-2{
     border-radius: 10px;
     margin-left: 230px;
     margin-top: 13px;
+    display:none;
 }
 p.col-3{
     width: 10px;
@@ -105,6 +103,7 @@ p.col-3{
     border-radius: 10px;
     margin-left: 390px;
     margin-top: 13px;
+    display:none;
 }
 
 p.row-1{
@@ -115,6 +114,7 @@ p.row-1{
     margin-left: 12px;
     background-color: #111;
     position: absolute;
+    display:none;
 }
 
 p.row-2{
@@ -125,6 +125,7 @@ p.row-2{
     border-radius: 10px;
     margin-top: 235px;
     margin-left: 12px;
+    display: none;
 }
 p.row-3{
     height: 10px;
@@ -134,6 +135,7 @@ p.row-3{
     border-radius: 10px;
     margin-top: 390px;
     margin-left: 12px;
+    display:none;
 }
 
 p.cross-1{
@@ -146,6 +148,7 @@ p.cross-1{
     margin-left: 440px;
     border-radius: 10px;
     transform-origin: bottom;
+    display:none;
 }
 
 p.cross-2{
@@ -158,6 +161,7 @@ p.cross-2{
     margin-top: -145px;
     border-radius: 10px;
     transform-origin: bottom;
+    display:none;
 }
 
 ul{
@@ -193,6 +197,6 @@ li span{
 
 @media screen and (max-width:450px) {
     section{
-        transform: scale(0.7);
+        transform: scale(0.8);
     }
 }
