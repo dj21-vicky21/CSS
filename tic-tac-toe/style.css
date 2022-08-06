@@ -190,3 +190,9 @@ li span{
     font-weight: 900;
     color: #fff;
 }
+
+@media screen and (max-width:450px) {
+    section{
+        transform: scale(0.7);
+    }
+}
